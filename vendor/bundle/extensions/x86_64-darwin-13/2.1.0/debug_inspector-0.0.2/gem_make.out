@@ -1,0 +1,16 @@
+current directory: /Users/jeremysuarez/drie-website-prod/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+/Users/jeremysuarez/.rvm/rubies/ruby-2.1.5/bin/ruby -r ./siteconf20160903-15604-qqmiz4.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jeremysuarez/drie-website-prod/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/jeremysuarez/drie-website-prod/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/jeremysuarez/drie-website-prod/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20160903-15604-1v0emhu
+installing default debug_inspector libraries
