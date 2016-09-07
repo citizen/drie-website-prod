@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   get 'home/index'
   get '/about_us' => 'home#about_us'
   get '/pricing' => 'home#pricing'
-  get "/pages/:page" => "pages#show"
 
   root 'home#index'
 
