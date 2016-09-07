@@ -225,7 +225,6 @@ th {
   }
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: "";
   }
   pre,
   blockquote {
@@ -5992,7 +5991,6 @@ button.close {
 }
 .popover > .arrow:after {
   border-width: 10px;
-  content: "";
 }
 .popover.top > .arrow {
   left: 50%;
