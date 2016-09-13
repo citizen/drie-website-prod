@@ -16,6 +16,7 @@ gem 'nokogiri'
 #gem 'split'
 
 group :development, :test do
+  gem 'meta_request'
   gem 'sqlite3'
    #gem 'mysql2', '~> 0.3.18'
   gem 'byebug',  '9.0.0', platform: :mri
@@ -31,6 +32,7 @@ group :development do
    gem "better_errors"
    gem 'pry-rails', :group => :development
    gem 'rubocop', require: false
+   gem 'rails_best_practices'
    # gem "binding_of_caller"
 end
 
