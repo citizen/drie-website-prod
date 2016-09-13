@@ -2,10 +2,10 @@ language: ruby
 rvm:
 - 2.3.0
 - 2.2.4
-bundler_args: --jobs=2
+bundler_args: "--jobs=2"
 script:
-  - bundle exec rake db:setup
-  - bundle exec rake spec
+- bundle exec rake test
 cache: bundler
 notifications:
-  slack: drie:GPNVJCY2WXcTMrJctVx94GVt
+  slack:
+    secure: emMeCJ3diTJDRk4iJgqUatB0U9yAEGzVAKL/BdhRrsXwJZsEPLPE+xuYf7zMum9V+dPW1DnLCKlGfiVPcRs3a6v3i0FILryGMjAr11vHF9xk5HT0/Kp6G4U1rwkMZH4r4FXrkNpkuqtMpzGAugP1T1q/Q0k1BbnrJvxUNfIzNw7g6VQLr4QUHAI3iOHpw+IDQRdHLJatHDGmM6UeKcXY6CAdT7NKvqAvO/lluY09CEWw0UR9hQ1NQ4QoOdGLWwp7qYU3jTQye4LwNGy/Qv76koSWflzaJcV733ioFsLbaqx/v3jor7nMfHf39prsS/brkQn2U/W3kzAkOhDjhZZBdBkxa5RKPOt51emY6223o9fdaJMiSr5TYjnDpAR7JjjW2RRIbvzWISc7i6QymvXSnLwySqIY/YVP53q1mN9nezA+v2bFtpi/EeqLvYPf98I5RJ0dJmJ+vypEBJU9YU8ZA2Z8efnFUe3QBBGkIIaFc/HIVKKM/j+uynzWtId3/gZCQ9p4u4ZCSVZs9UlKUqzAPLyHF/wWqf8DCEGExa2dlLmgbD5PGlbjz0mSNPBisLsEFJxVaWrbpVh5V5XF8wj/y0QHQrBJAUB1OxucKVH6buHDbJeYgO0MUWcV2icYxTfalWG4K0rn9G3hUTAlVQZp9BJCe3a2OpRB0DI9jU09Cvc=
