@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '4.2.4'
+gem 'actionpack',   '~> 4.2.4'
 #gem 'puma',         '2.14.0'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.0.0'
@@ -9,10 +10,15 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
 gem 'nokogiri'
+#gem 'twitter'
+#gem "koala", "~> 2.2"
+#gem "sentry-raven"
+#gem 'split'
 
 group :development, :test do
+  gem 'sqlite3'
    #gem 'mysql2', '~> 0.3.18'
- # gem 'byebug',  '9.0.0', platform: :mri
+  gem 'byebug',  '9.0.0', platform: :mri
 end
 
 group :development do
@@ -21,10 +27,16 @@ group :development do
    gem 'listen',                '3.0.8'
    gem 'spring',                '1.7.2'
    gem 'spring-watcher-listen', '2.0.0'
+   gem 'brakeman', :require => false
+   gem "better_errors"
+   gem 'pry-rails', :group => :development
+   gem 'rubocop', require: false
+   # gem "binding_of_caller"
 end
 
 group :test do
-   # gem 'rails-controller-testing', '0.1.1'
+  gem 'sqlite3'
+   #gem 'rails-controller-testing', '0.1.1'
    gem 'minitest-reporters',       '1.1.9'
    gem 'guard',                    '2.13.0'
    gem 'guard-minitest',           '2.4.4'
