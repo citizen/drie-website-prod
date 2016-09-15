@@ -13,8 +13,8 @@ class HomeControllerTest < ActionController::TestCase
     assert_select "title", "Drie - #{@base_title}"
   end
 
-  test "should get about_us" do
-    get :about_us
+  test "should get our_team" do
+    get :our_team
     assert_response :success
     assert_select "title", "Drie - #{@base_title}"
   end
