@@ -19,5 +19,11 @@ class HomeControllerTest < ActionController::TestCase
     assert_select "title", "Drie - #{@base_title}"
   end
 
+  test "should get insights" do
+    get :insights
+    assert_response :success
+    assert_select "title", "Drie - #{@base_title}"
+  end
+
 
 end
