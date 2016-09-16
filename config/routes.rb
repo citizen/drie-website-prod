@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   get 'home/index'
   get '/our_team' => 'home#our_team'
   get '/pricing' => 'home#pricing'
-    get '/insights' => 'home#insights'
+  get '/insights' => 'home#insights'
+  get '/press' => 'home#press'
 
   root 'home#index'
 
