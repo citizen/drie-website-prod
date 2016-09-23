@@ -7,6 +7,13 @@ Rails.application.routes.draw do
   get '/acknowledgement' => 'home#acknowledgement'
   get '/platform_as_a_service' => 'home#platform_as_a_service'
   get '/push' => 'home#push'
+  get '/classic' => 'home#classic'
+  get '/what_is_drie' => 'home#what_is_drie'
+  get '/our_customers' => 'home#our_customers'
+  get '/partners' => 'home#partners'
+  get '/status' => 'home#status'
+  get '/contact' => 'home#contact'
+  get '/help' => 'home#help'
 
   root 'home#index'
 
