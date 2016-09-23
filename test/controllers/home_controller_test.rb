@@ -31,5 +31,11 @@ class HomeControllerTest < ActionController::TestCase
     assert_select "title", "Drie - #{@base_title}"
   end
 
+  test "should get acknowledgement" do
+    get :acknowledgement
+    assert_response :success
+    assert_select "title", "Drie - #{@base_title}"
+  end
+
 
 end
