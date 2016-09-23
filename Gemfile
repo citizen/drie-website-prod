@@ -11,6 +11,11 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
 gem 'nokogiri'
 gem 'best_in_place'
+gem "vanity"
+gem "redis", ">= 2.1"
+gem "redis-namespace", ">= 1.1.0"
+gem "mongo", "~> 2.0"
+gem 'twitter', '~> 5.16'
 
 #gem 'masonry-rails', '~> 0.2.4'
 #gem 'twitter'
@@ -23,6 +28,8 @@ group :development, :test do
   gem 'sqlite3'
    #gem 'mysql2', '~> 0.3.18'
   gem 'byebug',  '9.0.0', platform: :mri
+  gem 'rails-dom-testing'
+  gem "minitest-rails"
 end
 
 group :development do

@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/insights' => 'home#insights'
   get '/press' => 'home#press'
   get '/acknowledgement' => 'home#acknowledgement'
+  get '/platform_as_a_service' => 'home#platform_as_a_service'
+  get '/push' => 'home#push'
 
   root 'home#index'
 

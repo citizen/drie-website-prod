@@ -37,5 +37,17 @@ class HomeControllerTest < ActionController::TestCase
     assert_select "title", "Drie - #{@base_title}"
   end
 
+  test "should get platform_as_a_service" do
+    get :platform_as_a_service
+    assert_response :success
+    assert_select "title", "Drie - #{@base_title}"
+  end
+
+  test "should get push" do
+    get :push
+    assert_response :success
+    assert_select "title", "Drie - #{@base_title}"
+  end
+
 
 end
