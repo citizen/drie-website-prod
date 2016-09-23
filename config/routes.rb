@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/pricing' => 'home#pricing'
   get '/insights' => 'home#insights'
   get '/press' => 'home#press'
+  get '/acknowledgement' => 'home#acknowledgement'
 
   root 'home#index'
 
