@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/twbs/bootstrap-sass.git
+  revision: 5d6b2ebba0c2a5885ce2f0e01e9218db3d3b5e47
+  specs:
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,6 +48,8 @@ GEM
     ansi (1.5.0)
     arel (6.0.3)
     ast (2.3.0)
+    autoprefixer-rails (6.4.1.1)
+      execjs
     best_in_place (3.1.0)
       actionpack (>= 3.2)
       railties (>= 3.2)
@@ -47,6 +57,9 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
+    bootstrap-glyphicons (0.0.1)
+      railties (>= 3.0)
+      sass (>= 3.2)
     brakeman (3.4.0)
     bson (4.1.1)
     buftok (0.2.0)
@@ -269,6 +282,8 @@ DEPENDENCIES
   actionpack (~> 4.2.4)
   best_in_place
   better_errors
+  bootstrap-glyphicons
+  bootstrap-sass!
   brakeman
   byebug (= 9.0.0)
   coffee-rails (= 4.2.1)

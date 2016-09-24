@@ -16,6 +16,8 @@ gem "redis", ">= 2.1"
 gem "redis-namespace", ">= 1.1.0"
 gem "mongo", "~> 2.0"
 gem 'twitter', '~> 5.16'
+gem 'bootstrap-glyphicons'
+gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git'
 
 #gem 'masonry-rails', '~> 0.2.4'
 #gem 'twitter'
