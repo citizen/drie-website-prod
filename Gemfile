@@ -19,6 +19,7 @@ gem 'twitter', '~> 5.16'
 gem 'bootstrap-glyphicons'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git'
 
+
 #gem 'masonry-rails', '~> 0.2.4'
 #gem 'twitter'
 #gem "koala", "~> 2.2"
@@ -32,6 +33,7 @@ group :development, :test do
   gem 'byebug',  '9.0.0', platform: :mri
   gem 'rails-dom-testing'
   gem "minitest-rails"
+  gem 'guard-livereload', '~> 2.5', require: false
 end
 
 group :development do
