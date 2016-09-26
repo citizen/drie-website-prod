@@ -14,10 +14,10 @@ Rails.application.routes.draw do
   get '/status' => 'home#status'
   get '/contact' => 'home#contact'
   get '/help' => 'home#help'
+  get '/community' => 'home#community'
+  get '/support' => 'home#support'
   get '/drie_joins_cyber_londons_cyber_security_accelerator' => 'home#drie_joins_cyber_londons_cyber_security_accelerator'
 
-
-  
 
   root 'home#index'
 
