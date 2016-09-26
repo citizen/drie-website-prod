@@ -625,3 +625,51 @@ PRICING TABLES NINE STYLES
     color: #006687;
     box-shadow: none;
 }
+
+/* CSS used here will be applied after bootstrap.css */
+
+
+
+.activity-stream-list cite {display:inline-block;}
+.activity-stream-list p {margin:0;}
+.activity-stream-list li {position:relative;margin-bottom:10px; padding:10px; border-left:30px solid #efefef;background:#efefef;}
+.activity-stream-list i {position:absolute;left:-23px;top:30px;}
+.activity-stream-list li.press-release {border-color:rgba(255, 165, 0, 0.43);}
+.activity-stream-list li.event {border-color:rgba(0, 128, 118, 0.43);}
+
+
+
+#items img {display:block;}
+#items a {font-size:12px;margin-right:5px;}
+
+/* 5 columns by default */
+.grid-sizer { min-width: 20%; }
+
+
+
+
+
+
+
+
+.well-service, .well-agency, .well-civic-official {padding:10px;margin-bottom:0;margin:20px 0;}
+.well-service:hover, .well-agency:hover, .well-civic-official:hover {background:#fff;}
+.well-service a, .well-agency a, .well-civic-official a {text-decoration:none;}
+.well-service .lead, .well-agency .lead, .well-civic-official .lead {display:block;margin-bottom:5px;font-size:18px;line-height:22px;}
+.well-agency img, .well-civic-official img {border-radius:50px;max-width:100px;float:left;margin:0 10px 10px 0; }
+
+.well-service img {margin-bottom:5px;}
+.well-service a {display:block;}
+
+.well-agency .lead {margin-top:10px;}
+.well-agency hr {margin-top: 0;margin-bottom: 0px;clear: both;padding-top: 10px;}
+
+
+.well-civic-official {position:relative;}
+.well-civic-official img {float:left;}
+.civic-official-office.lead {margin-top:10px;}
+.civic-official-rep {display:block;}
+.civic-official-name {padding-left:130px;}
+.civic-official-office {clear:both;}
+.well-civic-official address {clear:both;}
+
