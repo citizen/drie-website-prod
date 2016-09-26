@@ -607,3 +607,21 @@ PRICING TABLES NINE STYLES
     padding: 3px 15px !important;
   }
 }
+
+.btn.outline {
+    background: none;
+    padding: 10px 15px;
+}
+.btn-default.outline {
+    border: 1px solid #577d89;
+    color: #577d89;
+}
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+    color: #006687;
+    border-color: #006687;
+}
+.btn-default.outline:active, .btn-default.outline.active {
+    border-color: #006687;
+    color: #006687;
+    box-shadow: none;
+}
