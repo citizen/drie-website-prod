@@ -10,43 +10,43 @@ class HomeControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_select "title", "Drie - #{@base_title}"
+    assert_select "title", "drie - #{@base_title}"
   end
 
   test "should get our_team" do
     get :our_team
     assert_response :success
-    assert_select "title", "Drie - #{@base_title}"
+    assert_select "title", "drie - #{@base_title}"
   end
 
   test "should get insights" do
     get :insights
     assert_response :success
-    assert_select "title", "Drie - #{@base_title}"
+    assert_select "title", "drie - #{@base_title}"
   end
 
   test "should get press" do
     get :insights
     assert_response :success
-    assert_select "title", "Drie - #{@base_title}"
+    assert_select "title", "drie - #{@base_title}"
   end
 
   test "should get acknowledgement" do
     get :acknowledgement
     assert_response :success
-    assert_select "title", "Drie - #{@base_title}"
+    assert_select "title", "drie - #{@base_title}"
   end
 
   test "should get platform_as_a_service" do
     get :platform_as_a_service
     assert_response :success
-    assert_select "title", "Drie - #{@base_title}"
+    assert_select "title", "drie - #{@base_title}"
   end
 
   test "should get push" do
     get :push
     assert_response :success
-    assert_select "title", "Drie - #{@base_title}"
+    assert_select "title", "drie - #{@base_title}"
   end
 
 
