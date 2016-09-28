@@ -7,29 +7,68 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1>PRESS</h1>
+                        <h1>drie_push</h1>
 
-                        <h2>drie secure cloud infrastructure AWS PaaS will be one of seven startups participating</h2>
+                        <h2>If you use git, you should be using drie-push.</h2>
  
  
-<p>London, UK – (Sep 20th, 2016) - drie announced its selection from 100s of applications to participate in Cyber London’s (CyLon) cyber security accelerator.</p>
+<p><%= link_to image_tag("drie_push.png", alt: 'drie-push', class: 'img-responsive', :style=> ""), root_path %></p>
 
-<p>drie's service enables organisations to move their applications into the cloud without compromising on security in minutes rather than weeks.  CyLon will provide drie with introductions to help them roll out their service to more companies over the coming months and mentoring to scale their business.</p>
+<p>
+terminal
+</p>
 
-<p>drie, a web application platform made from the best bits of AWS glued together, in a 14-week programme, drie will work with cyber security specialists on all areas of their business. drie as a product has come out of HMRC and the goal is to make it easy for any business as part of their cyber security strategy to be able to use AWS  for developing new applications that need to go live quickly and securely.  In addition to training, mentorship and office space, the team will receive a £15,000 cash investment.</p>
- 
-<p>Kalbir Sohi, CEO of drie, said: “We are delighted that we have been selected for the CyLon accelerator. It will provide us with a fantastic platform to grow our business into a leading global cyber security provider whilst and connect us with key industry players and other innovators in the space. We are very excited to starting our journey with CyLon.”</p>
- 
- 
-<p>About drie
-drie is a platform as a service that glues together the best bits of Amazon Web Services (AWS) to meet security best practice to implement a repeatable, effective baseline security for our customers. We give companies the ability to run services on Amazon Web Services (AWS) in minutes with security built in. Organisations can build, deploy and run code without the costs and staffing levels required to build and maintain complex infrastructure. drie is disruptive as organisations will massively reduce the need to hire expensive “devops” contractors to build cloud-based services.</p>
- 
- 
-<p>Press contact
-Ulrike Eder
-ulrike@drie.co</p>
 
-                        <br>
+<pre>
+<code class="language-markup">
+
+To install git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git<br>
+
+to set up git: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup<br>
+  
+to generate ssh keys: https://git-scm.com/book/en/v2/ <br>Git-on-the-Server-Generating-Your-SSH-Public-Key 
+</p>
+
+</code>
+</pre>
+
+<pre>
+<code class="language-markup">
+
+Use the below to sign up with drie and create your first app:
+
+app_name=$(uuidgen)
+git clone https://github.com/heroku/node-js-sample
+cd node-js-sample
+git remote add drie git@drieapp.co:demo-${app_name}
+git push drie master  # <- wait for the build, the URL of your branch is printed to your terminal
+curl master.demo-${app_name}.drieapp.co
+once you're done, check out a branch called featurex and make a change:
+
+git checkout -b featurex
+vi index.js  # <- change the  text in response.send on line 8 to something else
+git add index.js
+git commit -m "good commit message"
+# pro-tip: you don't need to specify the branch name if your push strategy is set to simple.
+git push drie featurex # <- wait for the build, the URL of your branch is printed to your terminal
+curl featurex.demo
+
+</code>
+</pre>
+
+
+<p>What you're seeing in this demo is a functional proof of concept for the user experience we'll soon be rolling out to drie.
+
+There are glaring holes like log retrieval but if you stay close to the happy path above you can probably have a good go at the POC without needing any of that missing functionality yet.
+
+There is no cli to install. No sign-up to get started. Nothing but git, which you've almost certainly already got on your machine.
+
+Deploying master will look similar to other platforms but what is unique to drie is testing a feature is as easy as creating a new branch, making your changes and pushing it. You can run as many features at the same time as you want to, just push a branch and it will be available at {branch}.{drie_repo}.drieapp.co. Use cases could be anything from different environments to different languages in branches.
+
+Scaling is truly elastic. We create and destroy instances as required to serve requests (please don't load test, this POC is testing UX, not reliability under load).</p>
+
+
+
                     </div>
                 </div>
             </div>

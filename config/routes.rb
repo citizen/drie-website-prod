@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/help' => 'home#help'
   get '/community' => 'home#community'
   get '/support' => 'home#support'
+  get '/drie_push' => 'home#drie_push'
   get '/drie_joins_cyber_londons_cyber_security_accelerator' => 'home#drie_joins_cyber_londons_cyber_security_accelerator'
 
 
