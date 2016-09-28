@@ -49,5 +49,12 @@ class HomeControllerTest < ActionController::TestCase
     assert_select "title", "drie - #{@base_title}"
   end
 
+  test "should get drie_push" do
+    get :drie_push
+    assert_response :success
+    assert_select "title", "drie - #{@base_title}"
+  end
+
+
 
 end
