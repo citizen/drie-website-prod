@@ -18,6 +18,7 @@ gem "mongo", "~> 2.0"
 gem 'twitter', '~> 5.16'
 gem 'bootstrap-glyphicons'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git'
+gem 'coderay', '~> 1.1', '>= 1.1.1'
 
 
 #gem 'masonry-rails', '~> 0.2.4'

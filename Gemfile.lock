@@ -291,6 +291,7 @@ DEPENDENCIES
   bootstrap-sass!
   brakeman
   byebug (= 9.0.0)
+  coderay (~> 1.1, >= 1.1.1)
   coffee-rails (= 4.2.1)
   guard (= 2.13.0)
   guard-livereload (~> 2.5)
