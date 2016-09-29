@@ -9,7 +9,19 @@
                     <div class="col-md-12 text-center">
                         <h1>drie_push</h1>
 
-                        <h2>If you use git, you should be using drie_push.</h2>
+                        <h1>deploy your app in seconds using drie_push</h1>
+
+                        <h1>Built for developers by developers</h1>
+
+                        <h2>If you use git, you should be using drie_push</h2>
+
+                        <h2>Test in seconds</h2>
+
+                        <h2>First 33 days for free</h2>
+
+                        <h2>£3 per month</h2>
+
+
  
  
 <p><%= link_to image_tag("drie_push.png", alt: 'drie-push', class: 'img-responsive', :style=> ""), root_path %></p>
@@ -19,7 +31,30 @@ terminal
 </p>
 
 
-<pre>
+
+
+
+<p>
+<h1>Setting Up</h1>
+</p>
+
+
+<div class="container">
+                <div class="row">
+                    <div class="col-md-2 bg-clear">
+                     
+
+<p>
+<h1>(1) Install Git and SSH keys</h1>
+</p>
+
+                                </div>
+                            
+                        
+                        <div class="col-md-10">
+                       
+                                <p class="text-right">
+                                <pre>
 <code class="language-css">
 
 To install git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git<br>
@@ -31,11 +66,32 @@ to generate ssh keys: https://git-scm.com/book/en/v2/ <br>Git-on-the-Server-Gene
 
 </code>
 </pre>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-<pre data-line="4, 6, 10-13">
+
+<p>
+<h1>How to use drie-push</h1>
+</p>
+
+
+<div class="container">
+                <div class="row">
+                    <div class="col-md-2 bg-clear">
+                         <p>
+<h1>(2)Deploy your first app</h1>
+</p>
+
+                                </div>
+                            
+                        
+                        <div class="col-md-10">
+                       
+                                <p class="text-right">
+                                <pre data-line="4, 6, 10-13">
 <code class="language-css">
-
-Use the below to sign up with drie and create your first app:
 
 app_name=$(uuidgen)
 git clone https://github.com/heroku/node-js-sample
@@ -44,6 +100,36 @@ git remote add drie git@drieapp.co:demo-${app_name}
 git push drie master  # <- wait for the build, the URL of your branch is printed to your terminal
 curl master.demo-${app_name}.drieapp.co
 once you're done, check out a branch called featurex and make a change:
+
+</code>
+</pre>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+
+
+
+ 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 bg-clear">
+                            <p>
+<h1>(3)Test changes in a branch with drie_push</h1>
+</p>
+
+                                </div>
+                            
+                        
+                        <div class="col-md-10">
+                       
+                                <p class="text-right">
+                                <pre data-line="4, 6, 10-13">
+<code class="language-css">
+
 
 git checkout -b featurex
 vi index.js  # <- change the  text in response.send on line 8 to something else
@@ -55,7 +141,16 @@ curl featurex.demo
 
 </code>
 </pre>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
 
+
+ <p>
+<h1>ENJOY!</h1>
+</p>
 
 <p>What you're seeing in this demo is a functional proof of concept for the user experience we'll soon be rolling out to drie.
 
