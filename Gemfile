@@ -38,7 +38,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'sqlite3'
+   gem 'sqlite3'
    # gem 'web-console',           '3.1.1'
    gem 'listen',                '3.0.8'
    gem 'spring',                '1.7.2'
@@ -52,7 +52,7 @@ group :development do
 end
 
 group :test do
-  gem 'sqlite3'
+  #gem 'sqlite3'
    #gem 'rails-controller-testing', '0.1.1'
    gem 'minitest-reporters',       '1.1.9'
    gem 'guard',                    '2.13.0'

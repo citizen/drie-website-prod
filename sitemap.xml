@@ -7,7 +7,7 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://drie.co/</loc>
+  <loc>https://drie.co/</loc>
 </url>
 <url>
   <loc>http://drie.co/home.html</loc>
@@ -18,7 +18,11 @@
   <lastmod>2016-07-28T10:57:28+00:00</lastmod>
 </url>
 <url>
-  <loc>http://drie.co/about_us.html</loc>
+  <loc>http://drie.co/our_team.html</loc>
+  <lastmod>2016-07-28T10:57:28+00:00</lastmod>
+</url>
+<url>
+  <loc>http://drie.co/insights.html</loc>
   <lastmod>2016-07-28T10:57:28+00:00</lastmod>
 </url>
 </urlset>
