@@ -1,169 +1,80 @@
-<%= render "shared/header" %>
-<%= render "shared/menu" %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Starter Kit</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- This snippet is used to setup Simpla on your site -->
+    <script src="https://app.simpla.io"></script>
+    <script>
+      // Replace 'PROJECT-KEY' with your API key
+      // You can get your project's API key from https://simpla.io
+      Simpla('rJ-stj0a');
+    </script>
+
+  </head>
   <body>
-    <div id="wrap">
-        <br><br>
-              <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1>drie_push</h1>
 
-                        <h1>deploy your app in seconds using drie_push</h1>
+    <section class="splash">
 
-                        <h1>Built for developers by developers</h1>
+      <!-- Rather than hard-coding the content of this <h1>, we can
+           use <simpla-text> inside it to provide editable content. -->
+      <h1 class="splash__title"><simpla-text sid="splash-title"></simpla-text></h1>
 
-                        <h2>If you use git, you should be using drie_push</h2>
+      <!-- Every Simpla element needs a unique ID, which we provide in
+           an sid (Simpla ID) attribute on the element.   -->
+      <h2 class="splash__subtitle"><simpla-text sid="splash-subtitle"></simpla-text></h2>
 
-                        <h2>Test in seconds</h2>
+    </section>
 
-                        <h2>First 33 days for free</h2>
+    <section class="features">
 
-                        <h2>£3 per month</h2>
- 
-<p><%= link_to image_tag("drie_push.png", alt: 'drie-push', class: 'img-responsive', :style=> ""), root_path %></p>
+      <!-- We can structure our data with the <simpla-block> element.
+           <simpla-block> creates a new namespace, which means the sid's
+           of Simpla elements inside it are scoped to that block  -->
+      <simpla-block sid="feature-1" class="feature">
 
-<p>
-terminal
-</p>
+        <!-- <simpla-img> behaves similarly to an <img/>, except it
+             requires both opening and closing tags -->
+        <simpla-img sid="image" class="feature__img"></simpla-img>
 
+        <!-- When <simpla-text> is on its own it acts like a container,
+             creating <p>s inside itself. When it's inside another textual
+             element (eg: headings) it only allows line-breaks. -->
+        <simpla-text sid="copy" class="feature__copy" inline></simpla-text>
 
-<p>
-<h1>Setting Up</h1>
-</p>
+      </simpla-block>
 
+      <simpla-block sid="feature-2" class="feature">
 
-<div class="container">
-                <div class="row">
-                    <div class="col-md-2 bg-clear">
-                     
+        <!-- We can use the same SIDs here as before, since they
+             are scoped to this <simpla-block>  -->
+        <simpla-img sid="image" class="feature__img"></simpla-img>
 
-<p>
-<h1>(1) Install Git and SSH keys</h1>
-</p>
+        <simpla-text sid="copy" class="feature__copy" inline></simpla-text>
 
-                                </div>
-                            
-                        
-                        <div class="col-md-10">
-                       
-                                <p class="text-right">
-                                <pre>
-<code class="language-css">
+      </simpla-block>
 
-To install git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git<br>
+      <!-- Since the content inside a <simpla-block> is determined by
+           its SID, you can change whole sections or pages of content
+           by just wrapping it in a <simpla-block> and changing the SID -->
+      <simpla-block sid="feature-3" class="feature">
 
-to set up git: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup<br>
-  
-to generate ssh keys: https://git-scm.com/book/en/v2/ <br>Git-on-the-Server-Generating-Your-SSH-Public-Key 
-</p>
+        <simpla-img sid="image" class="feature__img"></simpla-img>
 
-</code>
-</pre>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <simpla-text sid="copy" class="feature__copy" inline></simpla-text>
 
+      </simpla-block>
 
-<p>
-<h1>How to use drie-push</h1>
-</p>
+    </section>
 
+    <!-- Next steps:
+          - Open this file in your browser
+          - Add #edit to the end of the URL
+          - Login and start editing content -->
 
-<div class="container">
-                <div class="row">
-                    <div class="col-md-2 bg-clear">
-                         <p>
-<h1>(2)Deploy your first app</h1>
-</p>
+    <!-- Want to learn more? Head to https://simpla.io/docs -->
 
-                                </div>
-                            
-                        
-                        <div class="col-md-10">
-                       
-                                <p class="text-right">
-                                <pre data-line="4, 6, 10-13">
-<code class="language-css">
-
-app_name=$(uuidgen)
-git clone https://github.com/heroku/node-js-sample
-cd node-js-sample
-git remote add drie git@drieapp.co:demo-${app_name}
-git push drie master  # <- wait for the build, the URL of your branch is printed to your terminal
-curl master.demo-${app_name}.drieapp.co
-once you're done, check out a branch called featurex and make a change:
-
-</code>
-</pre>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            
-
-
-
-
-
- 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 bg-clear">
-                            <p>
-<h1>(3)Test changes in a branch with drie_push</h1>
-</p>
-
-                                </div>
-                            
-                        
-                        <div class="col-md-10">
-                       
-                                <p class="text-right">
-                                <pre data-line="4, 6, 10-13">
-<code class="language-css">
-
-
-git checkout -b featurex
-vi index.js  # <- change the  text in response.send on line 8 to something else
-git add index.js
-git commit -m "good commit message"
-# pro-tip: you don't need to specify the branch name if your push strategy is set to simple.
-git push drie featurex # <- wait for the build, the URL of your branch is printed to your terminal
-curl featurex.demo
-
-</code>
-</pre>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            
-
-
- <p>
-<h1>ENJOY!</h1>
-</p>
-
-<p>What you're seeing in this demo is a functional proof of concept for the user experience we'll soon be rolling out to drie.
-
-There are glaring holes like log retrieval but if you stay close to the happy path above you can probably have a good go at the POC without needing any of that missing functionality yet.
-
-There is no cli to install. No sign-up to get started. Nothing but git, which you've almost certainly already got on your machine.
-
-Deploying master will look similar to other platforms but what is unique to drie is testing a feature is as easy as creating a new branch, making your changes and pushing it. You can run as many features at the same time as you want to, just push a branch and it will be available at {branch}.{drie_repo}.drieapp.co. Use cases could be anything from different environments to different languages in branches.
-
-Scaling is truly elastic. We create and destroy instances as required to serve requests (please don't load test, this POC is testing UX, not reliability under load).</p>
-
-
-
-                    </div>
-                </div>
-            </div>
-            </div>
-        <%= render "shared/footer" %>
-    </div>
-    <%= render "hubspot" %>
-    </body>
+  </body>
 </html>
