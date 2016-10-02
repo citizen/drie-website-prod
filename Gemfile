@@ -19,6 +19,7 @@ gem 'twitter', '~> 5.16'
 gem 'bootstrap-glyphicons'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
+gem 'sqlite3', '1.3.9'
 
 
 #gem 'masonry-rails', '~> 0.2.4'
@@ -29,7 +30,6 @@ gem 'coderay', '~> 1.1', '>= 1.1.1'
 
 group :development, :test do
   gem 'meta_request'
-  gem 'sqlite3'
    #gem 'mysql2', '~> 0.3.18'
   gem 'byebug',  '9.0.0', platform: :mri
   gem 'rails-dom-testing'
@@ -38,7 +38,6 @@ group :development, :test do
 end
 
 group :development do
-   gem 'sqlite3'
    # gem 'web-console',           '3.1.1'
    gem 'listen',                '3.0.8'
    gem 'spring',                '1.7.2'
@@ -60,7 +59,7 @@ group :test do
 end
 
 group :production do
-   gem 'sqlite3'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
