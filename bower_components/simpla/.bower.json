@@ -1,0 +1,33 @@
+{
+  "name": "simpla",
+  "description": "Dynamic content, without the CMS",
+  "version": "1.2.3",
+  "authors": [
+    "Simpla <admin@simpla.io>"
+  ],
+  "license": "MIT",
+  "main": "simpla.js",
+  "keywords": [
+    "simpla",
+    "web component",
+    "polymer",
+    "content",
+    "cms"
+  ],
+  "ignore": [
+    "*",
+    "!simpla.js",
+    "!LICENSE"
+  ],
+  "homepage": "https://github.com/simplaio/simpla",
+  "_release": "1.2.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.2.3",
+    "commit": "57a599b6af1459e3dec15c41c05696d002d465be"
+  },
+  "_source": "https://github.com/simplaio/simpla.git",
+  "_target": "^1.2.3",
+  "_originalSource": "simpla",
+  "_direct": true
+}
