@@ -19,6 +19,11 @@ Rails.application.routes.draw do
   get '/drie_push_developer' => 'home#drie_push_developer'
   get '/drie_push_designer' => 'home#drie_push_designer'
   get '/drie_push' => 'home#drie_push'
+  get '/government' => 'home#government'
+  get '/healthtech' => 'home#healthtech'
+  get '/fintech' => 'home#fintech'
+  get '/sme' => 'home#sme'
+  get '/enterprise' => 'home#enterprise'
   get '/drie_joins_cyber_londons_cyber_security_accelerator' => 'home#drie_joins_cyber_londons_cyber_security_accelerator'
 
 

@@ -20,6 +20,18 @@ gem 'bootstrap-glyphicons'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'sqlite3', '1.3.9'
+gem 'image_optim_rails'
+gem 'image_optim_pack'
+
+gem 'rack-mini-profiler'
+
+# For memory profiling (requires Ruby MRI 2.1+)
+gem 'memory_profiler'
+
+# For call-stack profiling flamegraphs (requires Ruby MRI 2.0.0+)
+gem 'flamegraph'
+gem 'stackprof'     # For Ruby MRI 2.1+
+gem 'fast_stack'    # For Ruby MRI 2.0
 
 
 #gem 'masonry-rails', '~> 0.2.4'
