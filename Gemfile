@@ -20,8 +20,8 @@ gem 'bootstrap-glyphicons'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'sqlite3', '1.3.9'
-gem 'image_optim_rails'
-gem 'image_optim_pack'
+# gem 'image_optim_rails'
+# gem 'image_optim_pack'
 
 gem 'rack-mini-profiler'
 
