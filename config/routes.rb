@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get '/partners' => 'home#partners'
   get '/status' => 'home#status'
   get '/contact' => 'home#contact'
+  get '/update' => 'home#update'
   get '/help' => 'home#help'
   get '/community' => 'home#community'
   get '/support' => 'home#support'
