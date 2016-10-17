@@ -17,9 +17,10 @@ gem "redis-namespace", ">= 1.1.0"
 gem "mongo", "~> 2.0"
 gem 'twitter', '~> 5.16'
 gem 'bootstrap-glyphicons'
-gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git'
+#gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'sqlite3', '1.3.9'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 # gem 'image_optim_rails'
 # gem 'image_optim_pack'
 
