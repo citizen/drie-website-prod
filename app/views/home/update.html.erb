@@ -226,9 +226,9 @@ var __st={"a":6915403,"offset":-25200,"reqid":"9996b392-e63b-4051-97d2-c8a9c2feb
 <script src="//cdn.shopify.com/s/assets/storefront/express_buttons-27e21b014f9b4f87588786d33b0eab6bd26cad283f619714cb75c8acd0753c24.js" defer="defer" crossorigin="anonymous"></script>
 
 <style type="text/css">
-.bgimg background-image{
-    background-image: url('36_cyber_security_128.png');
-    opacity: 0.6;
+.img-responsive {
+
+    opacity: 0.3;
 }
 
 h1 {font-size: 32px; font-family: "Open Sans"}
@@ -243,7 +243,19 @@ p  {font-size: 16px; font-family: "Open Sans"}
 .hero-homepage.hero {
     padding-top: 59px;
     padding-bottom: 28px;
-    width: 587px;}
+    
+    background-color: transparent !important;
+}
+
+.caption {
+   
+   
+        position: absolute;
+        left:0; top:105px;
+        z-index: -1;
+    }
+
+
 </style>
 
 
@@ -294,8 +306,9 @@ p  {font-size: 16px; font-family: "Open Sans"}
 
     
 
-<div class="hero hero-homepage bgimg">
-  <h1 class="hero-header"><span class="singlewordcolor">Build, deploy</span> and <span class="singlewordcolor">scale</span> your software with AWS security best practices</h1>
+<div class="hero hero-homepage">
+<%= link_to image_tag("drie_architecture_wide.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
+  <h1 class="hero-header caption"><span class="singlewordcolor">Build, deploy</span> and <span class="singlewordcolor">scale</span> your software with AWS security best practices</h1>
   <h4 class="text-muted">Embrace digital transformation by moving to the cloud.</h4>
   <a class="btn" href="/collections/all">View products</a>
 
