@@ -1,43 +1,36 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-              <div style="background-color:white; height: 5px"></div>
-            <div style="background-color:white; height: 5px"></div>
-    <div class="container" style="background-color: white;">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-            <%= link_to image_tag("drie_logo.png", width: '100', height: '100', alt: 'drie.co', class: 'img-responsive', :style=> "padding-top: 10px; padding-bottom: 10px; margin-left: 10px;"), root_path %>
-        
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right" style="background-color: white;">
-           
-                            <li class="">
-                              
-                                <a style="color:#00B599;" href="./pricing.html">PRICING<br></a>
-                            </li>
+<nav class="navbar navbar-default navbar-tall navbar-full" role="navigation">
 
-                            <li class="">
-                                <a style="color:#00B599;" href="./our_team.html">OUR TEAM</a>
-                            </li>
-                         
-                    
-                            <li class="">
-                                <a style="color:#00B599;" href="./insights.html">INSIGHTS</a>
-                            </li>          
-                            <li class="">
-                                <a style="color:#00B599;" target="_blank" href="https://web_dashboard.app.drie.co/login">LOG IN</a>
-                            </li>
-                     
-                        </ul>
 
-        </div --><!--/.navbar-collapse -->
-    </div>
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-nav">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+<%= link_to image_tag("drie_logo.png",  width: '150', height: '100', alt: 'drie.co', class: 'navbar-brand', :style=> "padding-top: 10px; padding-bottom: 10px; margin-left: 10px;"), root_path %>
+</div>
+
+<div class="collapse navbar-collapse" id="global-nav">
+<div class="navbar-right">
+  <ul class="nav navbar-nav">
+
+      <li>
+        <a href="./pricing.html">Pricing</a>
+      </li>
+
+      <li>
+        <a  href="./our_team.html">Our Team</a>
+      </li>
+
+      <li>
+        <a  href="./insights.html">Insights</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://dashboard.drie.co/login">Log In</a>
+      </li>
+
+  </ul>
+</div>
+</div>
 </nav>
-
-<br><br><br>
-
