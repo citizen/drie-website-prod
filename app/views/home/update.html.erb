@@ -40,7 +40,7 @@
 
 <!-- open graph -->
 
-    
+
   <meta property="og:title" content="Bootstrap Themes" />
   <meta property="og:type" content="website" />
 
@@ -51,7 +51,7 @@
 <meta property="og:url" content="http://themes.getbootstrap.com/" />
 <meta property="og:site_name" content="Bootstrap Themes" />
 
- 
+
 
 
 <!-- styles -->
@@ -73,18 +73,135 @@ var __st={"a":6915403,"offset":-25200,"reqid":"9996b392-e63b-4051-97d2-c8a9c2feb
 //]]>
 </script>
 
+<<<<<<< HEAD
 
 
      
     
 
+=======
+//]]>
+</script>
+<script src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-668547562549a84f5dfa01ef82607987f85ecbe1c8301faf25059becfa208199.js" defer="defer"></script>
+      <script type="text/javascript">
+
+      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+      window.ShopifyAnalytics.meta.currency = 'USD';
+      var meta = {};
+      for (var attr in meta) {
+        window.ShopifyAnalytics.meta[attr] = meta[attr];
+      }
+
+      </script>
+
+      <script type="text/javascript">
+        window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+
+        };
+      </script>
+
+      <script type="text/javascript" class="analytics">
+        (window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+
+        (function () {
+          var customDocumentWrite = function(content) {
+            var jquery = null;
+
+            if (window.jQuery) {
+              jquery = window.jQuery;
+            } else if (window.Checkout && window.Checkout.$) {
+              jquery = window.Checkout.$;
+            }
+
+            if (jquery) {
+              jquery('body').append(content);
+            }
+          };
+
+          var analytics = document.createElement('script');
+          var loaded = false;
+          var onload = function() {
+            if (loaded) return;
+            loaded = true;
+            window.ShopifyAnalytics.lib = window.trekkie.noConflict();
+            window.ShopifyAnalytics.lib.initialize(
+              {"Trekkie":{"appName":"storefront","environment":"production","defaultAttributes":{"shopId":6915403}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.001},"Google Analytics":{"trackingId":"UA-67613229-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true}}
+            );
+
+            window.ShopifyAnalytics.lib.ready(function() {
+
+      ga('require', 'linker');
+      function addListener(element, type, callback) {
+        if (element.addEventListener) {
+          element.addEventListener(type, callback);
+        }
+        else if (element.attachEvent) {
+          element.attachEvent('on' + type, callback);
+        }
+      }
+      function decorate(event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+          ga(function (tracker) {
+            var linkerParam = tracker.get('linkerParam');
+            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+          });
+        }
+      }
+      addListener(window, 'load', function(){
+        for (var i=0; i < document.forms.length; i++) {
+          var action = document.forms[i].getAttribute('action');
+          if(action && action.indexOf('/cart') >= 0) {
+            addListener(document.forms[i], 'submit', decorate);
+          }
+        }
+        for (var i=0; i < document.links.length; i++) {
+          var href = document.links[i].getAttribute('href');
+          if(href && href.indexOf('/checkout') >= 0) {
+            addListener(document.links[i], 'click', decorate);
+          }
+        }
+      });
+
+
+              var originalDocumentWrite = document.write;
+              document.write = customDocumentWrite;
+              try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+              document.write = originalDocumentWrite;
+
+
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {"pageType":"home"}
+        );
+
+
+            });
+          }
+          analytics.onload = onload;
+          analytics.onreadystatechange = function() {
+            if (!/complete|loaded/.test(analytics.readyState)) return;
+            onload();
+          }
+          analytics.async = true;
+          analytics.src = 'https://cdn.shopify.com/s/javascripts/trekkie.storefront.min.js?v=2016.09.01.1';
+          document.getElementsByTagName('head')[0].appendChild(analytics);
+
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-91b4691a5a0a9b8881b8d482fa57139c6710eb703344a18c284e80917fc3ddbf.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+        })();
+      </script>
+
+<script src="//cdn.shopify.com/s/assets/storefront/express_buttons-27e21b014f9b4f87588786d33b0eab6bd26cad283f619714cb75c8acd0753c24.js" defer="defer" crossorigin="anonymous"></script>
+>>>>>>> 7b4bc7d7cc50ce8e60d9c08530ff70ba4f931a30
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
 <style type="text/css">
-.img-responsive {
-
-    opacity: 0.1;
-}
 
 h1 {font-size: 32px; font-family: "Open Sans"}
 h2 {font-size: 24px; font-family: "Open Sans"}
@@ -92,40 +209,41 @@ h3 {font-size: 20px; font-family: "Open Sans"}
 h4 {font-size: 18px; font-family: "Open Sans" bold}
 p  {font-size: 16px; font-family: "Open Sans"}
 
+a:hover {color: #00B599;}
+
 .singlewordcolor {
-    color: #00B599
+    color: #00B599;
 }
 .hero-homepage.hero {
 
     padding-bottom: 28px;
-    
+
     background-color: transparent !important;
 }
 
 .caption {
         position: absolute;
         left:0; top:105px;
-        
+
     }
 
     .caption1 {
         position: absolute;
         left:20%; top:250px;
-        
+
     }
 
     .caption2 {
         position: absolute;
         left:45%; top:300px;
-      
+
     }
 
     .isolation {
         position: absolute;
         top:450px;
-      
-    }
 
+<<<<<<< HEAD
    footer form {
     margin: 15px 0;
 }
@@ -327,7 +445,156 @@ p  {font-size: 16px; font-family: "Open Sans"}
   background-color: black;
   display: block;
 }
+=======
+    }
+>>>>>>> 7b4bc7d7cc50ce8e60d9c08530ff70ba4f931a30
 
+    footer form {
+       margin: 15px 0;
+    }
+    #contact i {
+       margin: 10px 0 0 25px;
+    }
+    .medium-size-text {
+       font-size: 20px;
+    }
+    .italic-text {
+       font-style: italic;
+    }
+    .full {
+       width: 100%;
+    }
+    .gap {
+       height: 30px;
+       width: 100%;
+       clear: both;
+       display: block;
+    }
+    .footer {
+       background: #4A4A4A ;
+       height: auto;
+       padding-bottom: 30px;
+       position: relative;
+       width: 100%;
+       border-bottom: 1px solid #CCCCCC ;
+       border-top: 1px solid #DDDDDD ;
+       text-align: left;
+       padding: 1px 0;
+    }
+    .footer p {
+       margin: 0;
+    }
+    .footer img {
+       max-width: 100%;
+    }
+    .footer h3 {
+       border-bottom: 1px solid #BAC1C8 ;
+       color: #f3f3f3 ;
+       font-size: 18px;
+       font-weight: 600;
+       line-height: 27px;
+       padding: 40px 0 10px;
+       text-transform: uppercase;
+    }
+    .footer ul {
+       font-size: 13px;
+       list-style-type: none;
+       margin-left: 0;
+       padding-left: 0;
+       margin-top: 15px;
+       color: #7F8C8D ;
+    }
+    .footer ul li a {
+       padding: 0 0 5px 0;
+       display: block;
+    }
+    .footer a {
+       color: #f3f3f3
+    }
+    .supportLi h4 {
+       font-size: 20px;
+       font-weight: lighter;
+       line-height: normal;
+       margin-bottom: 0 !important;
+       padding-bottom: 0;
+    }
+    .newsletter-box input#appendedInputButton {
+       background: #FFFFFF ;
+       display: inline-block;
+       float: left;
+       height: 30px;
+       clear: both;
+       width: 100%;
+    }
+    .newsletter-box .btn {
+       border: medium none;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       -o-border-radius: 3px;
+       -ms-border-radius: 3px;
+       border-radius: 3px;
+       display: inline-block;
+       height: 40px;
+       padding: 0;
+       width: 100%;
+       color: #fff;
+    }
+    .newsletter-box {
+       overflow: hidden;
+    }
+    .bg-gray {
+       background-image: -moz-linear-gradient(center bottom, #BBBBBB  0%, #F0F0F0 100%);
+       box-shadow: 0 1px 0 #B4B3B3 ;
+    }
+    .social li {
+       background: none repeat scroll 0 0 #B5B5B5 ;
+       border: 2px solid #B5B5B5 ;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+       -ms-border-radius: 50%;
+       border-radius: 50%;
+       float: left;
+       height: 36px;
+       line-height: 36px;
+       margin: 0 8px 0 0;
+       padding: 0;
+       text-align: center;
+       width: 36px;
+       transition: all 0.5s ease 0s;
+       -moz-transition: all 0.5s ease 0s;
+       -webkit-transition: all 0.5s ease 0s;
+       -ms-transition: all 0.5s ease 0s;
+       -o-transition: all 0.5s ease 0s;
+    }
+    .social li:hover {
+       transform: scale(1.15) rotate(360deg);
+       -webkit-transform: scale(1.1) rotate(360deg);
+       -moz-transform: scale(1.1) rotate(360deg);
+       -ms-transform: scale(1.1) rotate(360deg);
+       -o-transform: scale(1.1) rotate(360deg);
+    }
+    .social li a {
+       color: #EDEFF1 ;
+    }
+    .social li:hover {
+       border: 2px solid #2c3e50 ;
+       background: #2c3e50 ;
+    }
+    .social li a i {
+       font-size: 16px;
+       margin: 0 0 0 5px;
+       color: #EDEFF1  !important;
+    }
+    .footer-bottom {
+       background: #E3E3E3 ;
+       border-top: 1px solid #DDDDDD ;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+    .footer-bottom p.pull-left {
+       padding-top: 6px;
+    }
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic);
 * { margin: 0; }
@@ -398,70 +665,34 @@ function updateImage(){
   <div class="container-overflow-wrap">
 
   <div class="container">
-    <nav class="navbar navbar-default navbar-tall navbar-full" role="navigation">
+    <%= render "shared/menu" %>
 
 
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-nav">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <%= link_to image_tag("drie_logo.png",  width: '100', height: '100', alt: 'drie.co', class: 'img-responsive', :style=> "padding-top: 10px; padding-bottom: 10px; margin-left: 10px;"), root_path %>
-  </div>
 
-  <div class="collapse navbar-collapse" id="global-nav">
-    <div class="navbar-right">
-      <ul class="nav navbar-nav">
-        
-          <li>
-            <a style="color:#00B599;" href="./pricing.html">Pricing</a>
-          </li>
-        
-          <li>
-            <a style="color:#00B599;" href="./our_team.html">Our Team</a>
-          </li>
-        
-          <li>
-            <a style="color:#00B599;" href="./insights.html">Insights</a>
-          </li>
-          <li>
-            <a style="color:#00B599;" target="_blank" href="https://dashboard.drie.co/login">Log In</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    
-
-<div class="hero hero-homepage">
-<%= link_to image_tag("drie_architecture_wide.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
+<div class="hero hero-homepage" style="background-image: url('<% asset_path('drie_architecture_wide.png')%>') ">
   <h1 class="hero-header caption"><span class="singlewordcolor">Build, deploy</span> and <span class="singlewordcolor">scale</span> your software with AWS security best practices</h1>
   <h2 class="caption1">Embrace digital transformation by moving to the cloud.</h2>
   <a class="btn caption2" href="/collections/all">View products</a>
 
-  
+
 </div>
 
-<div class="isolation">
-<div class="screenshots screenshots-fan clearfix">
-     
-          <div class="col-sm-4">
-      
+
+  <div class="row row-padded homepage-grid row-bordered p-t text-center">
+
+      <div class="col-sm-4">
+
       <%= link_to image_tag("36cybersecurity128.png", alt: 'drie.co', class: 'homepage-grid-icon'), root_path %>
-    
-     
-      <h5><strong>Isolation encryptioon and identity management</strong></h5>
+
+
+      <h5><strong>Isolation encryption and identity management</strong></h5>
       <p class="text-muted"></p>
       <p class="text-muted"><span class="singlewordcolor">Learn How ></span></p>
     </div>
 
     <div class="col-sm-4">
       <%= link_to image_tag("19_mobile_apps_development_128.png", alt: 'drie.co', class: 'homepage-grid-icon'), root_path %>
-      <h5><strong>Try deployong your apps for free</strong></h5>
+      <h5><strong>Try deploying your apps for free</strong></h5>
       <p class="text-muted"></p>
        <p class="text-muted"><span class="singlewordcolor">Deploy Now ></span></p>
     </div>
@@ -472,34 +703,34 @@ function updateImage(){
       <p class="text-muted"></p>
            <p class="text-muted"><span class="singlewordcolor">Find Out How ></span></p>
     </div>
-        
+
   </div>
-  </div>
+
 
 
 <div class="hidden-xs">
 
 
-      
+
 
 <div class="row row-padded row-bordered row-centered">
 <div class="page-header">
-        <h1 class="singlewordcolor">See for yourself how quick drie really is</h1>
+        <h1 class="singlewordcolor">Deploy software to an isolated, TLS and encrypted environment in 3 easy commands</h1>
     </div>
     <div class="col-sm-6">
       <div class="homepage-terminal-example">
         <p class="m-b-md">
-          <span class="text-muted">> $ npm install</span><br>
+          <span class="text-muted">> $ drie app add my-new-app</span><br>
           Everything installed!
         </p>
         <p class="m-b-md">
-          <span class="text-muted">> $ npm start</span><br>
+          <span class="text-muted">> $ drie app deploy</span><br>
           Server started http://localhost:9001<br>
           LiveReload started<br>
           Opening http://localhost:9001/docs/
         </p>
         <p>
-          <span class="text-muted">> $ is that it?</span><br>
+          <span class="text-muted">> $ drie app scale 2</span><br>
           Yup, it's that simple.
         </p>
       </div>
@@ -542,13 +773,13 @@ function updateImage(){
   <%= render "embrace_compliance_and_security_regulations" %>
   <%= render "who_uses_the_drie_security_platform" %>
 
-  
 
-  
 
-  
 
-  
+
+
+
+
 
   <div class="row row-backbordered">
     <div class="col-sm-12">
@@ -573,7 +804,7 @@ function updateImage(){
   <%= render "drie_value_comparisons" %>
   <%= render "shared/footer" %>
 
-  
+
 
 
   </div>

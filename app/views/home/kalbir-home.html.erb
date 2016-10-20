@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -225,6 +226,10 @@ var __st={"a":6915403,"offset":-25200,"reqid":"9996b392-e63b-4051-97d2-c8a9c2feb
 <script src="//cdn.shopify.com/s/assets/storefront/express_buttons-27e21b014f9b4f87588786d33b0eab6bd26cad283f619714cb75c8acd0753c24.js" defer="defer" crossorigin="anonymous"></script>
 
 <style type="text/css">
+.img-responsive {
+
+    opacity: 0.1;
+}
 
 h1 {font-size: 32px; font-family: "Open Sans"}
 h2 {font-size: 24px; font-family: "Open Sans"}
@@ -279,31 +284,185 @@ p  {font-size: 16px; font-family: "Open Sans"}
   <div class="container-overflow-wrap">
 
   <div class="container">
+    <nav class="navbar navbar-default navbar-tall navbar-full" role="navigation">
 
-    <%= render "shared/menu" %>
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <%= link_to image_tag("drie_logo.png",  width: '150', height: '100', alt: 'drie.co', class: 'navbar-brand', :style=> "padding-top: 10px; padding-bottom: 10px; margin-left: 10px;"), root_path %>
+  </div>
+
+  <div class="collapse navbar-collapse" id="global-nav">
+    <div class="navbar-right">
+      <ul class="nav navbar-nav">
+
+          <li>
+            <a style="color:#00B599;" href="./pricing.html">Pricing</a>
+          </li>
+
+          <li>
+            <a style="color:#00B599;" href="./our_team.html">Our Team</a>
+          </li>
+
+          <li>
+            <a style="color:#00B599;" href="./insights.html">Insights</a>
+          </li>
+          <li>
+            <a style="color:#00B599;" target="_blank" href="https://dashboard.drie.co/login">Log In</a>
+          </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
-    <div class="row homepage-grid p-t text-center">
-      <div class="page-header">
-          <h1 class="text-center singlewordcolor">Meet the stellar team behind drie!</h1>
-          <h3>Our team, your business</h3>
-      </div>
+
+<div class="hero hero-homepage">
+<%= link_to image_tag("drie_architecture_wide.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
+  <h1 class="hero-header caption"><span class="singlewordcolor">Build, deploy</span> and <span class="singlewordcolor">scale</span> your software with AWS security best practices</h1>
+  <h2 class="caption1">Embrace digital transformation by moving to the cloud.</h2>
+  <a class="btn caption2" href="/collections/all">View products</a>
+
+
+</div>
+
+
+  <div class="row row-padded homepage-grid row-bordered p-t text-center">
+
+      <div class="col-sm-4">
+
+      <%= link_to image_tag("36cybersecurity128.png", alt: 'drie.co', class: 'homepage-grid-icon'), root_path %>
+
+
+      <h5><strong>Isolation encryption and identity management</strong></h5>
+      <p class="text-muted"></p>
+      <p class="text-muted"><span class="singlewordcolor">Learn How ></span></p>
     </div>
 
-    <div class="row  homepage-grid row-bordered p-t text-center">
-      <div class="col-sm-8 col-sm-offset-2">
-        <%= image_tag("kalbir_card.png", alt: 'drie.co', class: 'img-responsive') %>
-        <%= image_tag("ulrike_card.png", alt: 'drie.co', class: 'img-responsive') %>
-        <%= image_tag("tom_card.png", alt: 'drie.co', class: 'img-responsive') %>
-      </div>
+    <div class="col-sm-4">
+      <%= link_to image_tag("19_mobile_apps_development_128.png", alt: 'drie.co', class: 'homepage-grid-icon'), root_path %>
+      <h5><strong>Try deploying your apps for free</strong></h5>
+      <p class="text-muted"></p>
+       <p class="text-muted"><span class="singlewordcolor">Deploy Now ></span></p>
+    </div>
+
+    <div class="col-sm-4">
+      <%= link_to image_tag("36_secure_data_folder_128.png", alt: 'drie.co', class: 'homepage-grid-icon'), root_path %>
+      <h5><strong>Avoid the pain of compliance and security regulations</strong></h5>
+      <p class="text-muted"></p>
+           <p class="text-muted"><span class="singlewordcolor">Find Out How ></span></p>
     </div>
 
   </div>
 
-  <%= render "contact_us_to_find_out_more" %>
 
+
+<div class="hidden-xs">
+
+
+
+
+<div class="row row-padded row-bordered row-centered">
+<div class="page-header">
+        <h1 class="singlewordcolor">Deploy software to an isolated, TLS and encrypted environment in 3 easy commands</h1>
+    </div>
+    <div class="col-sm-6">
+      <div class="homepage-terminal-example">
+        <p class="m-b-md">
+          <span class="text-muted">> $ drie app add my-new-app</span><br>
+          Everything installed!
+        </p>
+        <p class="m-b-md">
+          <span class="text-muted">> $ drie app deploy</span><br>
+          Server started http://localhost:9001<br>
+          LiveReload started<br>
+          Opening http://localhost:9001/docs/
+        </p>
+        <p>
+          <span class="text-muted">> $ drie app scale 2</span><br>
+          Yup, it's that simple.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-5 col-sm-offset-1">
+
+    <%= link_to image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon'), root_path %>
+      <h3><strong>How drie works</strong></h3>
+      <h4 class="m-b-md">Give yourself the security of privately managed infrastructure with the cost savings, ease of development and deplotment of the public cloud.</h4>
+      <a class="btn btn-primary" target="_blank" href="https://bootstrap-themes.github.io/dashboard/docs/">Play video</a>
+    </div>
+  </div>
+
+  <div class="row row-backbordered">
+    <div class="col-sm-12">
+      <div class="panel panel-default panel-floating panel-floating-inline">
+        <div class="panel-body">
+          <div class="panel-content">
+            <h5 class="m-b-0"><strong>Create a drie account today</strong></h5>
+            <p class="text-muted"><small>Join drie today to benefit from secure and fast deployment.</small></p>
+          </div>
+          <div class="panel-actions">
+            <form class="form-inline pull-right" action="//getbootstrap.us13.list-manage.com/subscribe/post?u=e3428dd6b8fda73bc5ba8b6e6&amp;id=198881a019" method="post" id="mc-embedded-subscribe-form"  name="mc-embedded-subscribe-form" target="_blank" novalidate>
+              <input class="form-control input-lg panel-email-input" id="mce-EMAIL" name="EMAIL" type="email" placeholder="Email">
+              <!-- This is to throw off spambots -->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e3428dd6b8fda73bc5ba8b6e6_198881a019" tabindex="-1" value=""></div>
+              <input type="submit" value="Sign up" name="Sign up" id="mc-embedded-subscribe" class="btn btn-lg">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= render "try_deploying_your_apps" %>
+  <%= render "embrace_compliance_and_security_regulations" %>
+  <%= render "who_uses_the_drie_security_platform" %>
+
+
+
+
+
+
+
+
+
+  <div class="row row-backbordered">
+    <div class="col-sm-12">
+      <div class="panel panel-default panel-floating panel-floating-inline">
+        <div class="panel-body">
+          <div class="panel-content">
+            <h5 class="m-b-0 m-t-0"><strong>Contact us to find out more how we can provide secure, reliable and fast deployment for you.</strong></h5>
+            <p class="text-muted m-b-0"><small>Now you know what we’re about, so peep the goods!</small></p>
+          </div>
+          <div class="panel-actions">
+            <a class="btn btn-lg pull-right" href="/collections/all">Contact drie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+  <%= render "drie_value_comparisons" %>
   <%= render "shared/footer" %>
 
+
+
+
+  </div>
 
   <!-- General JavaScript -->
   <!-- jquery.js -->
