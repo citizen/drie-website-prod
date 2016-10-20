@@ -323,8 +323,7 @@ p  {font-size: 16px; font-family: "Open Sans"}
 
 
 
-<div class="hero hero-homepage">
-<%= link_to image_tag("drie_architecture_wide.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
+<div class="hero hero-homepage" style="background-image: url('<% asset_path('drie_architecture_wide.png')%>') ">
   <h1 class="hero-header caption"><span class="singlewordcolor">Build, deploy</span> and <span class="singlewordcolor">scale</span> your software with AWS security best practices</h1>
   <h2 class="caption1">Embrace digital transformation by moving to the cloud.</h2>
   <a class="btn caption2" href="/collections/all">View products</a>
