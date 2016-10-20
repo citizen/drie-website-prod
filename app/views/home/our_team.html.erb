@@ -225,10 +225,6 @@ var __st={"a":6915403,"offset":-25200,"reqid":"9996b392-e63b-4051-97d2-c8a9c2feb
 <script src="//cdn.shopify.com/s/assets/storefront/express_buttons-27e21b014f9b4f87588786d33b0eab6bd26cad283f619714cb75c8acd0753c24.js" defer="defer" crossorigin="anonymous"></script>
 
 <style type="text/css">
-.img-responsive {
-
-    opacity: 0.1;
-}
 
 h1 {font-size: 32px; font-family: "Open Sans"}
 h2 {font-size: 24px; font-family: "Open Sans"}
@@ -287,15 +283,20 @@ p  {font-size: 16px; font-family: "Open Sans"}
     <%= render "shared/menu" %>
 
 
-    <div class="row row-padded homepage-grid row-bordered p-t text-center">
+    <div class="row  homepage-grid p-t text-center">
       <div class="page-header">
           <h1 class="text-center singlewordcolor">Meet the stellar team behind Drie!</h1>
           <h4>Our team, your business</h4>
       </div>
     </div>
 
-
-
+    <div class="row  homepage-grid row-bordered p-t text-center">
+      <div class="col-sm-8 col-sm-offset-2">
+        <%= link_to image_tag("kalbir_card.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
+        <%= link_to image_tag("ulrike_card.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
+        <%= link_to image_tag("tom_card.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
+      </div>
+    </div>
 
 
 
