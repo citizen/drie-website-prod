@@ -294,7 +294,7 @@ p  {font-size: 16px; font-family: "Open Sans"}
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <%= link_to image_tag("drie_logo.png",  width: '100', height: '100', alt: 'drie.co', class: 'img-responsive', :style=> "padding-top: 10px; padding-bottom: 10px; margin-left: 10px;"), root_path %>
+    <%= link_to image_tag("drie_logo.png",  width: '150', height: '100', alt: 'drie.co', class: 'navbar-brand', :style=> "padding-top: 10px; padding-bottom: 10px; margin-left: 10px;"), root_path %>
   </div>
 
   <div class="collapse navbar-collapse" id="global-nav">
@@ -332,22 +332,22 @@ p  {font-size: 16px; font-family: "Open Sans"}
 
 </div>
 
-<div class="isolation">
-<div class="screenshots screenshots-fan clearfix">
 
-          <div class="col-sm-4">
+  <div class="row row-padded homepage-grid row-bordered p-t text-center">
+
+      <div class="col-sm-4">
 
       <%= link_to image_tag("36cybersecurity128.png", alt: 'drie.co', class: 'homepage-grid-icon'), root_path %>
 
 
-      <h5><strong>Isolation encryptioon and identity management</strong></h5>
+      <h5><strong>Isolation encryption and identity management</strong></h5>
       <p class="text-muted"></p>
       <p class="text-muted"><span class="singlewordcolor">Learn How ></span></p>
     </div>
 
     <div class="col-sm-4">
       <%= link_to image_tag("19_mobile_apps_development_128.png", alt: 'drie.co', class: 'homepage-grid-icon'), root_path %>
-      <h5><strong>Try deployong your apps for free</strong></h5>
+      <h5><strong>Try deploying your apps for free</strong></h5>
       <p class="text-muted"></p>
        <p class="text-muted"><span class="singlewordcolor">Deploy Now ></span></p>
     </div>
@@ -360,7 +360,7 @@ p  {font-size: 16px; font-family: "Open Sans"}
     </div>
 
   </div>
-  </div>
+
 
 
 <div class="hidden-xs">
@@ -370,22 +370,22 @@ p  {font-size: 16px; font-family: "Open Sans"}
 
 <div class="row row-padded row-bordered row-centered">
 <div class="page-header">
-        <h1 class="singlewordcolor">See for yourself how quick drie really is</h1>
+        <h1 class="singlewordcolor">Deploy software to an isolated, TLS and encrypted environment in 3 easy commands</h1>
     </div>
     <div class="col-sm-6">
       <div class="homepage-terminal-example">
         <p class="m-b-md">
-          <span class="text-muted">> $ npm install</span><br>
+          <span class="text-muted">> $ drie app add my-new-app</span><br>
           Everything installed!
         </p>
         <p class="m-b-md">
-          <span class="text-muted">> $ npm start</span><br>
+          <span class="text-muted">> $ drie app deploy</span><br>
           Server started http://localhost:9001<br>
           LiveReload started<br>
           Opening http://localhost:9001/docs/
         </p>
         <p>
-          <span class="text-muted">> $ is that it?</span><br>
+          <span class="text-muted">> $ drie app scale 2</span><br>
           Yup, it's that simple.
         </p>
       </div>
