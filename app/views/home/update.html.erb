@@ -241,7 +241,7 @@ p  {font-size: 16px; font-family: "Open Sans"}
     color: #00B599
 }
 .hero-homepage.hero {
-    padding-top: 59px;
+
     padding-bottom: 28px;
     
     background-color: transparent !important;
@@ -255,15 +255,22 @@ p  {font-size: 16px; font-family: "Open Sans"}
 
     .caption1 {
         position: absolute;
-        left:0; top:200px;
+        left:20%; top:250px;
         
     }
 
     .caption2 {
         position: absolute;
-        left:0; top:300px;
+        left:45%; top:300px;
       
     }
+
+    .isolation {
+        position: absolute;
+        top:450px;
+      
+    }
+
 
 
 </style>
@@ -295,18 +302,18 @@ p  {font-size: 16px; font-family: "Open Sans"}
       <ul class="nav navbar-nav">
         
           <li>
-            <a style="color:#00B599;" href="./pricing.html">PRICING<br></a>
+            <a style="color:#00B599;" href="./pricing.html">Pricing</a>
           </li>
         
           <li>
-            <a style="color:#00B599;" href="./our_team.html">OUR TEAM</a>
+            <a style="color:#00B599;" href="./our_team.html">Our Team</a>
           </li>
         
           <li>
-            <a style="color:#00B599;" href="./insights.html">INSIGHTS</a>
+            <a style="color:#00B599;" href="./insights.html">Insights</a>
           </li>
           <li>
-            <a style="color:#00B599;" target="_blank" href="https://dashboard.drie.co/login">LOG IN</a>
+            <a style="color:#00B599;" target="_blank" href="https://dashboard.drie.co/login">Log In</a>
           </li>
         
       </ul>
@@ -319,12 +326,13 @@ p  {font-size: 16px; font-family: "Open Sans"}
 <div class="hero hero-homepage">
 <%= link_to image_tag("drie_architecture_wide.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
   <h1 class="hero-header caption"><span class="singlewordcolor">Build, deploy</span> and <span class="singlewordcolor">scale</span> your software with AWS security best practices</h1>
-  <h4 class="text-muted caption1">Embrace digital transformation by moving to the cloud.</h4>
+  <h2 class="caption1">Embrace digital transformation by moving to the cloud.</h2>
   <a class="btn caption2" href="/collections/all">View products</a>
 
   
 </div>
 
+<div class="isolation">
 <div class="screenshots screenshots-fan clearfix">
      
           <div class="col-sm-4">
@@ -351,6 +359,7 @@ p  {font-size: 16px; font-family: "Open Sans"}
            <p class="text-muted"><span class="singlewordcolor">Find Out How ></span></p>
     </div>
         
+  </div>
   </div>
 
 
