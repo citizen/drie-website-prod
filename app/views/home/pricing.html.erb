@@ -1,301 +1,364 @@
-<%= render "shared/header" %>
-<%= render "shared/menu" %>
-<body>
-    <div id="wrap">
-    <div class="section">
+<!doctype html>
+<html>
+<head>
 
-<div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <br />
-                <h2>Pay-as-you go pricing without surprises</h2>
-             <h5>Choose a plan that suits your business</h5>
-                <br /><br />
-            </div>
-        </div>      
-        <div class="row">
-            <div class=" col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                <div class="db-wrapper">
-                    <div class="db-pricing-nine">
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th class="db-bk-color-one">T2.MICRO AWS INSTANCE</th>
-                                        <th class="db-bk-color-two">M3.MEDIUM AWS INSTANCE</th>
-                                        <th class="db-bk-color-three">M4.LARGE AWS INSTANCE</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="db-width-perticular">CPU</td>
-                                        <td>VM 1VCPU, 1GB RAM, 8GB SSD DISK</td>
-                                        <td>VM 1VCPU, 3.75GB RAM, 8GB SSD DISK</td>
-                                        <td>VM 2VCPU, 8GB RAM, 8GB SSD DISK</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">PER HOUR</td>
-                                        <td>£0.055</td>
-                                        <td>£0.200</td>
-                                        <td>£0.372</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">INTERNET BANDWIDTH</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">REGULAR AUTOMATIC OS PATCHING</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">VM LEVEL ISOLATION BETWEEN APPS</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">ENCRYPTION OF CONFIG AND CODE USING CUSTOMER CONTROLLED KEYS</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">HTTPS BY DEFAULT</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">TRIVIAL APP UPDATES AND ROLL BACK</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">SIMPLE API INTEGRATION WITH EXISTING CI/CD SOLUTIONS</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">INTEGRATE WITH YOUR CURRENT SOURCE CONTROL</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">LOCK DOWN COMMUNICATIONS BETWEEN APPS</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">SECURE CONNECTIVITY TO OTHER AWS INFRASTRUCTURE</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular">TICKETED SUPPORT</td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                        <td><i class="glyphicon glyphicon-ok icon-green"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="db-width-perticular"></td>
-                                        <td><a href="#" class="btn db-button-color-two">BUY PLAN</a> </td>
-                                        <td><a href="#" class="btn db-button-color-two">BUY PLAN</a> </td>
-                                        <td><a href="#" class="btn db-button-color-two">BUY PLAN</a> </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+  <!-- EXPERIMENT A2 tracking code -->
+  <!-- Google Analytics Content Experiment code -->
+  <script>function utmx_section(){}function utmx(){}(function(){var
+  k='108454052-4',d=document,l=d.location,c=d.cookie;
+  if(l.search.indexOf('utm_expid='+k)>0)return;
+  function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+  indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+  length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+  '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+  '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+  '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+  valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+  '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+  </script><script>utmx('url','A/B');</script>
+  <!-- End of Google Analytics Content Experiment code -->
+
+  <!-- General Head Content -->
+  <!-- meta tags -->
+<meta charset="utf-8" />
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+
+<meta name="description" content="Official Bootstrap Themes and templates from the creators of Bootstrap including dashboards, admins, and marketing sites." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google-site-verification" content="4--Yv8-XVyrl4hAM2ceeBXt8H8iiI_3Ms3vDSIV5xN0" />
+
+
+<!-- title tag-->
+<title>
+  Bootstrap Themes
+</title>
+
+<!-- search engine -->
+<link rel="canonical" href="http://themes.getbootstrap.com/" />
+
+<!-- open graph -->
+
+
+  <meta property="og:title" content="Bootstrap Themes" />
+  <meta property="og:type" content="website" />
+
+
+
+<meta property="og:description" content="Official Bootstrap Themes and templates from the creators of Bootstrap including dashboards, admins, and marketing sites." />
+
+<meta property="og:url" content="http://themes.getbootstrap.com/" />
+<meta property="og:site_name" content="Bootstrap Themes" />
+
+
+
+
+<!-- styles -->
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="//cdn.shopify.com/s/files/1/0691/5403/t/128/assets/style.scss.css?12510731831507118242" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+
+  <!-- External content for head -->
+  <script>
+//<![CDATA[
+      var Shopify = Shopify || {};
+      Shopify.shop = "strapping-io.myshopify.com";
+      Shopify.theme = {"name":"v0.0.2","id":66483909,"theme_store_id":null,"role":"main"};
+
+//]]>
+</script>
+
+
+<script>
+//<![CDATA[
+    (function() {
+      function asyncLoad() {
+        var urls = ["https:\/\/dfjp7gc2z6ooe.cloudfront.net\/assets\/sky_pilot.js?shop=strapping-io.myshopify.com","https:\/\/cdn.shopify.com\/s\/files\/1\/0691\/5403\/t\/125\/assets\/hitsanalytics.js?11608832055738061282\u0026shop=strapping-io.myshopify.com"];
+        for (var i = 0; i < urls.length; i++) {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = urls[i];
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+      window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+    })();
+
+//]]>
+</script>
+<script id="__st">
+//<![CDATA[
+var __st={"a":6915403,"offset":-25200,"reqid":"9996b392-e63b-4051-97d2-c8a9c2feb081","pageurl":"themes.getbootstrap.com\/","u":"38a6b49a0bed","p":"home"};
+//]]>
+</script>
+<script>
+//<![CDATA[
+      (function() {
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+        s.src = '//cdn.shopify.com/s/javascripts/shopify_stats.js?v=6';
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+
+//]]>
+</script>
+<script src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-668547562549a84f5dfa01ef82607987f85ecbe1c8301faf25059becfa208199.js" defer="defer"></script>
+      <script type="text/javascript">
+
+      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+      window.ShopifyAnalytics.meta.currency = 'USD';
+      var meta = {};
+      for (var attr in meta) {
+        window.ShopifyAnalytics.meta[attr] = meta[attr];
+      }
+
+      </script>
+
+      <script type="text/javascript">
+        window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+
+        };
+      </script>
+
+      <script type="text/javascript" class="analytics">
+        (window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+
+        (function () {
+          var customDocumentWrite = function(content) {
+            var jquery = null;
+
+            if (window.jQuery) {
+              jquery = window.jQuery;
+            } else if (window.Checkout && window.Checkout.$) {
+              jquery = window.Checkout.$;
+            }
+
+            if (jquery) {
+              jquery('body').append(content);
+            }
+          };
+
+          var analytics = document.createElement('script');
+          var loaded = false;
+          var onload = function() {
+            if (loaded) return;
+            loaded = true;
+            window.ShopifyAnalytics.lib = window.trekkie.noConflict();
+            window.ShopifyAnalytics.lib.initialize(
+              {"Trekkie":{"appName":"storefront","environment":"production","defaultAttributes":{"shopId":6915403}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.001},"Google Analytics":{"trackingId":"UA-67613229-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true}}
+            );
+
+            window.ShopifyAnalytics.lib.ready(function() {
+
+      ga('require', 'linker');
+      function addListener(element, type, callback) {
+        if (element.addEventListener) {
+          element.addEventListener(type, callback);
+        }
+        else if (element.attachEvent) {
+          element.attachEvent('on' + type, callback);
+        }
+      }
+      function decorate(event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+          ga(function (tracker) {
+            var linkerParam = tracker.get('linkerParam');
+            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+          });
+        }
+      }
+      addListener(window, 'load', function(){
+        for (var i=0; i < document.forms.length; i++) {
+          var action = document.forms[i].getAttribute('action');
+          if(action && action.indexOf('/cart') >= 0) {
+            addListener(document.forms[i], 'submit', decorate);
+          }
+        }
+        for (var i=0; i < document.links.length; i++) {
+          var href = document.links[i].getAttribute('href');
+          if(href && href.indexOf('/checkout') >= 0) {
+            addListener(document.links[i], 'click', decorate);
+          }
+        }
+      });
+
+
+              var originalDocumentWrite = document.write;
+              document.write = customDocumentWrite;
+              try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+              document.write = originalDocumentWrite;
+
+
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {"pageType":"home"}
+        );
+
+
+            });
+          }
+          analytics.onload = onload;
+          analytics.onreadystatechange = function() {
+            if (!/complete|loaded/.test(analytics.readyState)) return;
+            onload();
+          }
+          analytics.async = true;
+          analytics.src = 'https://cdn.shopify.com/s/javascripts/trekkie.storefront.min.js?v=2016.09.01.1';
+          document.getElementsByTagName('head')[0].appendChild(analytics);
+
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-91b4691a5a0a9b8881b8d482fa57139c6710eb703344a18c284e80917fc3ddbf.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+        })();
+      </script>
+
+<script src="//cdn.shopify.com/s/assets/storefront/express_buttons-27e21b014f9b4f87588786d33b0eab6bd26cad283f619714cb75c8acd0753c24.js" defer="defer" crossorigin="anonymous"></script>
+
+<style type="text/css">
+
+h1 {font-size: 32px; font-family: "Open Sans"}
+h2 {font-size: 24px; font-family: "Open Sans"}
+h3 {font-size: 20px; font-family: "Open Sans"}
+h4 {font-size: 18px; font-family: "Open Sans" bold}
+p  {font-size: 16px; font-family: "Open Sans"}
+
+.singlewordcolor {
+    color: #00B599
+}
+.hero-homepage.hero {
+
+    padding-bottom: 28px;
+
+    background-color: transparent !important;
+}
+
+.caption {
+        position: absolute;
+        left:0; top:105px;
+
+    }
+
+    .caption1 {
+        position: absolute;
+        left:20%; top:250px;
+
+    }
+
+    .caption2 {
+        position: absolute;
+        left:45%; top:300px;
+
+    }
+
+    .isolation {
+        position: absolute;
+        top:450px;
+
+    }
+
+
+
+</style>
+
+
+<link rel="stylesheet" media="all" href="//cdn.shopify.com/s/assets/storefront/additional-checkout-buttons-ae777fb5a35686e712f15ee06ea7d1bf240ffa3214125e4741ed905663cf5d32.css" />
+
+</head>
+
+<body id="bootstrap-themes" class="swag-line template-index" >
+  <div class="container-overflow-wrap">
+
+  <div class="container">
+
+    <%= render "shared/menu" %>
+
+
+    <div class="row homepage-grid p-t text-center">
+      <div class="page-header">
+          <h1><span class="text-center singlewordcolor">Pay-as-you-go</span> pricing without surprises</h1>
+          <h3>View our product plans and find the one that suits you or your business</h3>
+      </div>
     </div>
-    <!-- CONATINER END -->
 
-
-       
+    <div class="row homepage-grid row-bordered p-t text-center">
+      <div class="col-sm-3 panel panel-default panel-floating ">
+        <div class="panel-body">
+          <%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
+          <h1><span class="text-center singlewordcolor">drie</span></h1>
+          <p>Create an account &#8212; get</p>
+          <h3><span class="text-center singlewordcolor">£100 free credit</span></h3>
+          <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="/collections/all">Contact drie</a>
+        </div>
+      </div>
+      <div class="col-sm-3 col-sm-offset-1 panel panel-default panel-floating ">
+        <div class="panel-body">
+          <%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
+          <h1><span class="text-center singlewordcolor">drie push</span> beta</h1>
+          <p>Sign up for a</p>
+          <h3><span class="text-center singlewordcolor">£100 free credit</span></h3>
+          <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="/collections/all">Contact drie</a>
+        </div>
+      </div>
+      <div class="col-sm-3 col-sm-offset-1 panel panel-default panel-floating ">
+        <div class="panel-body">
+          <%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
+          <h1><span class="text-center singlewordcolor">drie</span></h1>
+          <p>Create an account &#8212; get</p>
+          <h3><span class="text-center singlewordcolor">£100 free credit</span></h3>
+          <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="/collections/all">Contact drie</a>
+        </div>
+      </div>
     </div>
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div style="text-align: center;">
-                    <h1>Try free for 14 days</h1>
-                    <h3>No credit card required. Cancel at any time.</h3>
-                </div>
-                <div style="width:50%; margin: 0 auto;">
-                    <br>
-                    <form name="insightly_web_to_lead" action="https://e6ly17bw.insight.ly/WebToLead/Create" method="post">
-                        <div class="form-group firstname">
-                            <input type="hidden" name="formId" value="gxFZ7XAWiGuO2AwnXDHFoQ==">
-                            <label for="insightly_firstName">First Name:</label>
-                            <input class="form-control" id="insightly_firstName" placeholder="Enter First Name" name="FirstName" type="text">
-                        </div>
-                        <div class="form-group lastname">
-                            <label for="insightly_lastName">Last Name:</label>
-                            <input class="form-control" id="insightly_lastName" placeholder="Enter Last Name" name="LastName" type="text">
-                        </div>
-                        <div class="form-group email">
-                            <label for="email">Email:</label>
-                            <input class="form-control" id="insightly_Email" placeholder="Enter Email" name="email" type="text">
-                        </div>
-                        <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="1175044">
-                        <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="1206815">
 
-                        <div class="text-center">
-                        <input class="btn btn-success" style="background-color: #00B599 ; border-color:#00B599;" type="submit" value="Start a free trial">
-                        </div>
-                    </form>
-                    <div class="text-center">
-                    <p style="font-size: 8px">By signing up, you agree to the
-                        <a href="http://docs.drie.co/docs/terms-of-service">Terms of Service</a>
-                    </p>
-                    </div>
-                </div>
-            </div>
-            <hr size="">
-            <div class="section">
+  </div>
 
-            <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1>Pricing and Billing FAQ</h1>
-                        </div>
-                    </div>
-                </div>
+  <%= render "contact_us_to_find_out_more" %>
 
-            <div class="container ">
-    <div class="panel-group" id="faqAccordion">
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
-                 <h4 class="panel-title">
-                    How long are your contracts?
+  <%= render "shared/footer" %>
 
-              </h4>
 
-            </div>
-            <div id="question0" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                     <h5><span class="label label-primary">Answer</span></h5>
+  <!-- General JavaScript -->
+  <!-- jquery.js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
 
-                    <p>drie plans are paid monthly. For us it’s important that you can start - and stop - using drie at any time.</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
-                 <h4 class="panel-title">
-                   Is there a discount for yearly contract?
-              </h4>
+<!-- bootstrap.js -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
 
-            </div>
-            <div id="question1" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                     <h5><span class="label label-primary">Answer</span></h5>
+<script>
+  $('html').removeClass('no-js').addClass('js')
+</script>
 
-                    <p>Yes, we offer discounts on up-front long-term commitments. Please get in touch to discuss this further.</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
-                 <h4 class="panel-title">
-                  How do I sign up?
-              </h4>
+<!-- Our main app.js -->
+<script src="//cdn.shopify.com/s/files/1/0691/5403/t/128/assets/app.js?12510731831507118242" type="text/javascript"></script>
 
-            </div>
-            <div id="question2" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                     <h5><span class="label label-primary">Answer</span></h5>
+<!-- Async Script for Twitter Widgets -->
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
 
-                    <p>You start with a free trial. We don't collect your credit card until you've determined that drie is the right product for you.</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
-                 <h4 class="panel-title">
-                   How am I billed for using drie?
-              </h4>
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
 
-            </div>
-            <div id="question3" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                     <h5><span class="label label-primary">Answer</span></h5>
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
-                    <p>You will only pay for what you use. drie will bill your application instances per hour, rounded up.</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
-                 <h4 class="panel-title">
-                  How do I cancel service?
-              </h4>
 
-            </div>
-            <div id="question4" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                     <h5><span class="label label-primary">Answer</span></h5>
-
-                    <p>Canceling drie is straightforward an easy. It's done online right from your site manager.</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
-                 <h4 class="panel-title">
-                  Can I switch plans?
-              </h4>
-
-            </div>
-            <div id="question5" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                     <h5><span class="label label-primary">Answer</span></h5>
-
-                    <p>Yes, at any time, just give us a call or drop us an email and we’ll get that done for you.</p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default ">
-            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question6">
-                 <h4 class="panel-title">
-                    Have more questions?
-              </h4>
-
-            </div>
-            <div id="question6" class="panel-collapse collapse" style="height: 0px;">
-                <div class="panel-body">
-                     <h5><span class="label label-primary">Answer</span></h5>
-
-                    <p>Our support team is available 24/7 and usually responds in well under an hour. Drop us a note to
-                    <a href="mailto:hello@drie.co" style="color: #00B599; font-weight: bold;" target="_blank"> hello@drie.co</a> to contact us.</p>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    <!--/panel-group-->
-</div>
-            </div>
-
-        </div>
-
-        <%= render "shared/footer" %>
-    </div>
-    
-    <%= render "shared/hubspot" %>
-
-    </body>
-
+<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
 </html>
