@@ -91,22 +91,26 @@ p  {font-size: 16px; font-family: "Open Sans"}
 
     }
 
-    .caption1 {
+.caption1 {
         position: absolute;
         left:20%; top:250px;
 
     }
 
-    .caption2 {
+.caption2 {
         position: absolute;
         left:45%; top:300px;
 
     }
 
-    .isolation {
+.isolation {
         position: absolute;
         top:450px;
 
+    }
+
+.tick-mark {
+      padding: 0 15px;
     }
 
 
@@ -148,7 +152,7 @@ p  {font-size: 16px; font-family: "Open Sans"}
             <span style="display: block; font-size: 1.3em;"><span class="text-center singlewordcolor">£100 free credit</span></span>
           </div>
           <div class="panel-action m-b-lg">
-            <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="https://dashboard.drie.co/signup">Sign up</a></div>
+            <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="#drie-main">Learn more</a></div>
         </div>
       </div>
       <div class="col-md-4 m-b-lg text-center">
@@ -184,26 +188,27 @@ p  {font-size: 16px; font-family: "Open Sans"}
     </div>
 
   <div class="row row-padded row-bordered p-t text-center">
+    <a name="drie-main"></a>
     <div class="col-sm-2">
-      <%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
+      <h3><%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon', style: 'height: 75px;') %></h3>
       <h1><span class="text-center singlewordcolor">drie</span></h1>
     </div>
-    <div class="col-sm-4">
-      <h2>VM 1VPCU</h2>
-      <h2>1GB RAM, 8GB SSD DISK</h2>
-      <span style="display: block; font-size: 1.3em;">+£100 free credit</span>
-      <h1>£0.11 per hour</h1>
-      <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="">Sign up</a>
+    <div class="col-sm-4 text-left">
+      <h3>VM 1VPCU <br /> 1GB RAM, 8GB SSD DISK</h3>
+      <span class="singlewordcolor" style="display: block; font-size: 1.3em;">+£100 free credit</span>
+      <h2>£0.11 per hour</h2>
+      <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="https://dashboard.drie.co">Sign up</a>
     </div>
-    <div class="col-sm-6">
-      <h3>drie micro plans include</h3>
-      <p>Some stuff</p>
-      <ul>
-        <li>VM isolation between apps</li>
-        <li>Regular automated VM patching</li>
-        <li>Encryption of config and code using Amazon Key Management Service</li>
-        <li>Simple command line interface for deploying apps</li>
-        <li>Simple API integration</li>
+    <div class="col-sm-6 text-left">
+      <h3>drie micro plan</h3>
+      <p>Your application is deployed onto firewalled virtual machines. Each application gets its own load balancer and certificates ensuring end-to-end TLS traffic. Scale up to as many instances as you need.</p>
+      <ul class="list-unstyled text-left">
+        <li><span class="tick-mark">&#10004;</span> VM isolation between apps</li>
+        <li><span class="tick-mark">&#10004;</span> Regular automated VM patching</li>
+        <li><span class="tick-mark">&#10004;</span> End to end TLS encryption as default</li>
+        <li><span class="tick-mark">&#10004;</span> Encryption of config and code using Amazon Key Management Service</li>
+        <li><span class="tick-mark">&#10004;</span> Simple command line interface for deploying apps</li>
+        <li><span class="tick-mark">&#10004;</span> Simple API integration</li>
       </ul>
     </div>
 
@@ -239,10 +244,10 @@ p  {font-size: 16px; font-family: "Open Sans"}
       <a class="btn btn-lg" style="background-color: #49305b; border-color:#49305b; color: white" href="https://push.drie.co">Sign up</a>
     </div>
     <div class="col-sm-6">
-      <ul>
-        <li>Deploy straight from git</li>
-        <li>Build websites from every branch</li>
-        <li>Deploy to isolated VMs in seconds</li>
+      <ul class="list-unstyled text-left">
+        <li><span class="tick-mark">&#10004;</span> Deploy straight from git</li>
+        <li><span class="tick-mark">&#10004;</span> Build websites from every branch</li>
+        <li><span class="tick-mark">&#10004;</span> Run your app on an isolated VM in seconds</li>
       </ul>
     </div>
 
@@ -254,20 +259,20 @@ p  {font-size: 16px; font-family: "Open Sans"}
       <h1><span class="text-center singlewordcolor">drie consult</span></h1>
       <h3>Custom security assessment</h3>
       <p>We provide our customers with the ability to understand their existing DevOps security holes and provide a prioritised action plan of how to fix them. We will work with you to understand your threat landscape and identify key risks to your business by asking you what you really care about.</p>
-      <p>The kinds of areas we will assess include:</p>
+      <p>The areas we will assess include:</p>
       <div class="col-sm-6">
-        <ul>
-          <li>Data in transit</li>
-          <li>Incident management</li>
-          <li>Code building and deployment</li>
-          <li>Availability and disaster recovery</li>
+        <ul class="list-unstyled text-left">
+          <li><span class="tick-mark">&#10004;</span> Data in transit</li>
+          <li><span class="tick-mark">&#10004;</span> Incident management</li>
+          <li><span class="tick-mark">&#10004;</span> Code building and deployment</li>
+          <li><span class="tick-mark">&#10004;</span> Availability and disaster recovery</li>
         </ul>
       </div>
       <div class="col-sm-6">
-        <ul>
-          <li>Encryption</li>
-          <li>Authentication</li>
-          <li>Firewalls</li>
+        <ul class="list-unstyled text-left">
+          <li><span class="tick-mark">&#10004;</span> Encryption</li>
+          <li><span class="tick-mark">&#10004;</span> Authentication</li>
+          <li><span class="tick-mark">&#10004;</span> Firewalls</li>
         </ul>
       </div>
     </div>
@@ -283,6 +288,8 @@ p  {font-size: 16px; font-family: "Open Sans"}
 </div><!-- container ends here -->
 
 </div><!-- container overflow wrap ends here -->
+
+  <%= render "contact_us_to_find_out_more" %>
 
   <%= render "shared/footer" %>
 
