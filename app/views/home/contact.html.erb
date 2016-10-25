@@ -293,17 +293,53 @@ p  {font-size: 16px; font-family: "Open Sans"}
     </div>
     <hr class="col-md-12">
 
-    <div class="row  homepage-grid row-bordered p-t text-center">
-      <div class="col-sm-8 col-sm-offset-2">
-        <%= link_to image_tag("kalbir_card.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
-        <%= link_to image_tag("ulrike_card.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
-        <%= link_to image_tag("tom_card.png", alt: 'drie.co', class: 'img-responsive'), root_path %>
+    <div class="row row-bordered">
+      <div class="col-sm-4 text-center">
+        <%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
+        <h3><a href="https://www.drie.co"><span class="singlewordcolor">www.drie.co</span></a></h3>
+        <p>14 Private Road</p>
+        <p>Enfield</p>
+        <p>EN1 2EH</p>
+        <p><span class="singlewordcolor">hello@drie.co</span></p>
+
+
       </div>
-    </div>
+
+      <div class="col-sm-8">
+
+        <p class="col-sm-12">Fill out the form to get the ball rolling on your project. We'll follow up with you shortly.</p>
+
+        <form name="insightly_web_to_lead" action="https://e6ly17bw.insight.ly/WebToLead/Create" method="post">
+          <input type="hidden" name="formId" value="gxFZ7XAWiGuO2AwnXDHFoQ==" />
+          <div class="names" class="col-sm-12">
+            <div class="col-sm-6" style="width: 50%; float: left;">
+              <input class="form-control" id="insightly_firstName" placeholder="First Name (required)" name="FirstName" style="width: 100%;" type="text"/><br/>
+            </div>
+            <div class="col-sm-6" style="width: 50%;  float:left;">
+              <input class="form-control" id="insightly_lastName" placeholder="Last Name (required)" name="LastName" style="width: 100%;" type="text"/><br/>
+            </div>
+          </div>
+          <div class="col-sm-12" style="float:left;">
+            <input class="form-control" id="insightly_Email" style="width: 100%; margin-bottom: 25px;" placeholder="Email" name="email" type="text">
+          </div>
+
+          <div class="col-sm-12">
+              <input class="form-control" id="insightly_organization" placeholder="Company name" name="companyname" style="width: 100%;" type="text"/><br/>
+          </div>
+          <div class="col-sm-12">
+              <input class="form-control" id="insightly_Description" placeholder="Your message" name="Message" style="width: 100%; height: 150px;" type="textarea"/><br/>
+          </div>
+
+          <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="1053566">
+          <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="1201976">
+          <div class="col-sm-12">
+            <input class="btn btn-success"  style="background-color: #00B599 ; border-color:#00B599; margin-bottom: 25px;" type="submit" value="Send message">
+          </div>
+        </form>
+      </div>
+      </div>
 
   </div>
-
-  <%= render "contact_us_to_find_out_more" %>
 
   <%= render "shared/footer" %>
 
