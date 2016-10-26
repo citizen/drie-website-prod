@@ -417,6 +417,27 @@ dl#simple-gallery dd img{
 .img-greyed {
   opacity: 0.1;
 }
+
+@media (min-width: 768px) {
+  .three-blob-header {
+    height: 70px;
+  }
+
+  .three-blob-text {
+    height: 180px;
+  }
+}
+
+@media (min-width: 992px) {
+  .three-blob-header {
+    height: 50px;
+  }
+
+  .three-blob-text {
+    height: 150px;
+  }
+}
+
 </style>
 
 <script type="text/javascript">
@@ -462,22 +483,22 @@ function updateImage(){
 
     <div class="col-sm-4">
       <%= image_tag("36cybersecurity128.png", alt: 'drie.co', class: 'homepage-grid-icon', style: 'padding: 10px 0;') %>
-      <h5 style="height: 50px;"><strong>Isolation, encryption and key management</strong></h5>
-      <p class="text-muted" style="height: 150px;">We've used our experience building web application platforms for government and banks to design an AWS architecture that puts security first.</p>
+      <h5 class="three-blob-header"><strong>Isolation, encryption and key management</strong></h5>
+      <p class="text-muted three-blob-text">We've used our experience building web application platforms for government and banks to design an AWS architecture that puts security first.</p>
       <p class="text-muted"><a href="http://docs.drie.co/docs/drie-platform-overview"><span class="singlewordcolor">Learn How ></span></a></p>
     </div>
 
     <div class="col-sm-4">
       <%= image_tag("19_mobile_apps_development_128.png", alt: 'drie.co', class: 'homepage-grid-icon', style: 'padding: 10px 0;') %>
-      <h5 style="height: 50px;"><strong>Try deploying your apps for free</strong></h5>
-      <p class="text-muted" style="height: 150px;">Deploy an application from git today and get £100 free credit to try the platform. Find a small, fast and real project to get started on today whilst meeting AWS security best practices.</p>
+      <h5 class="three-blob-header"><strong>Try deploying your apps for free</strong></h5>
+      <p class="text-muted three-blob-text">Deploy an application from git today and get £100 free credit to try the platform. Find a small, fast and real project to get started on today whilst meeting AWS security best practices.</p>
       <p class="text-muted"><a href="https://dashboard.drie.co/"><span class="singlewordcolor">Deploy Now ></span></a></p>
     </div>
 
     <div class="col-sm-4">
       <%= image_tag("36_secure_data_folder_128.png", alt: 'drie.co', class: 'homepage-grid-icon', style: 'padding: 18px 0 10px 0;') %>
-      <h5 style="height: 50px;"><strong>Avoid the pain of compliance and security regulations</strong></h5>
-      <p class="text-muted"style="height: 150px;" >At drie we are open about our architecture and processes to help you meet compliance and risk regulations like <a href="https://www.gov.uk/government/publications/cloud-service-security-principles/cloud-service-security-principles">CESG's Cloud Security Principles</a> or the upcoming <a href="https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/">GDPR</a>.</p>
+      <h5 class="three-blob-header"><strong>Avoid the pain of compliance and security regulations</strong></h5>
+      <p class="text-muted three-blob-text" >At drie we are open about our architecture and processes to help you meet compliance and risk regulations like <a href="https://www.gov.uk/government/publications/cloud-service-security-principles/cloud-service-security-principles">CESG's Cloud Security Principles</a> or the upcoming <a href="https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/">GDPR</a>.</p>
       <p class="text-muted"><a href="contact.html"><span class="singlewordcolor">Get in touch ></span></a></p>
     </div>
 
