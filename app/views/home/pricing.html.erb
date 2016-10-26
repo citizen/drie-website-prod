@@ -63,164 +63,7 @@
 
 
   <!-- External content for head -->
-  <script>
-//<![CDATA[
-      var Shopify = Shopify || {};
-      Shopify.shop = "strapping-io.myshopify.com";
-      Shopify.theme = {"name":"v0.0.2","id":66483909,"theme_store_id":null,"role":"main"};
 
-//]]>
-</script>
-
-
-<script>
-//<![CDATA[
-    (function() {
-      function asyncLoad() {
-        var urls = ["https:\/\/dfjp7gc2z6ooe.cloudfront.net\/assets\/sky_pilot.js?shop=strapping-io.myshopify.com","https:\/\/cdn.shopify.com\/s\/files\/1\/0691\/5403\/t\/125\/assets\/hitsanalytics.js?11608832055738061282\u0026shop=strapping-io.myshopify.com"];
-        for (var i = 0; i < urls.length; i++) {
-          var s = document.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = urls[i];
-          var x = document.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        }
-      }
-      window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
-    })();
-
-//]]>
-</script>
-<script id="__st">
-//<![CDATA[
-var __st={"a":6915403,"offset":-25200,"reqid":"9996b392-e63b-4051-97d2-c8a9c2feb081","pageurl":"themes.getbootstrap.com\/","u":"38a6b49a0bed","p":"home"};
-//]]>
-</script>
-<script>
-//<![CDATA[
-      (function() {
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-        s.src = '//cdn.shopify.com/s/javascripts/shopify_stats.js?v=6';
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-      })();
-
-//]]>
-</script>
-<script src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-668547562549a84f5dfa01ef82607987f85ecbe1c8301faf25059becfa208199.js" defer="defer"></script>
-      <script type="text/javascript">
-
-      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-      window.ShopifyAnalytics.meta.currency = 'USD';
-      var meta = {};
-      for (var attr in meta) {
-        window.ShopifyAnalytics.meta[attr] = meta[attr];
-      }
-
-      </script>
-
-      <script type="text/javascript">
-        window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
-
-        };
-      </script>
-
-      <script type="text/javascript" class="analytics">
-        (window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
-
-        (function () {
-          var customDocumentWrite = function(content) {
-            var jquery = null;
-
-            if (window.jQuery) {
-              jquery = window.jQuery;
-            } else if (window.Checkout && window.Checkout.$) {
-              jquery = window.Checkout.$;
-            }
-
-            if (jquery) {
-              jquery('body').append(content);
-            }
-          };
-
-          var analytics = document.createElement('script');
-          var loaded = false;
-          var onload = function() {
-            if (loaded) return;
-            loaded = true;
-            window.ShopifyAnalytics.lib = window.trekkie.noConflict();
-            window.ShopifyAnalytics.lib.initialize(
-              {"Trekkie":{"appName":"storefront","environment":"production","defaultAttributes":{"shopId":6915403}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.001},"Google Analytics":{"trackingId":"UA-67613229-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true}}
-            );
-
-            window.ShopifyAnalytics.lib.ready(function() {
-
-      ga('require', 'linker');
-      function addListener(element, type, callback) {
-        if (element.addEventListener) {
-          element.addEventListener(type, callback);
-        }
-        else if (element.attachEvent) {
-          element.attachEvent('on' + type, callback);
-        }
-      }
-      function decorate(event) {
-        event = event || window.event;
-        var target = event.target || event.srcElement;
-        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
-          ga(function (tracker) {
-            var linkerParam = tracker.get('linkerParam');
-            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
-          });
-        }
-      }
-      addListener(window, 'load', function(){
-        for (var i=0; i < document.forms.length; i++) {
-          var action = document.forms[i].getAttribute('action');
-          if(action && action.indexOf('/cart') >= 0) {
-            addListener(document.forms[i], 'submit', decorate);
-          }
-        }
-        for (var i=0; i < document.links.length; i++) {
-          var href = document.links[i].getAttribute('href');
-          if(href && href.indexOf('/checkout') >= 0) {
-            addListener(document.links[i], 'click', decorate);
-          }
-        }
-      });
-
-
-              var originalDocumentWrite = document.write;
-              document.write = customDocumentWrite;
-              try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-              document.write = originalDocumentWrite;
-
-
-        window.ShopifyAnalytics.lib.page(
-          null,
-          {"pageType":"home"}
-        );
-
-
-            });
-          }
-          analytics.onload = onload;
-          analytics.onreadystatechange = function() {
-            if (!/complete|loaded/.test(analytics.readyState)) return;
-            onload();
-          }
-          analytics.async = true;
-          analytics.src = 'https://cdn.shopify.com/s/javascripts/trekkie.storefront.min.js?v=2016.09.01.1';
-          document.getElementsByTagName('head')[0].appendChild(analytics);
-
-      var eventsListenerScript = document.createElement('script');
-      eventsListenerScript.async = true;
-      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-91b4691a5a0a9b8881b8d482fa57139c6710eb703344a18c284e80917fc3ddbf.js";
-      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-
-        })();
-      </script>
 
 <script src="//cdn.shopify.com/s/assets/storefront/express_buttons-27e21b014f9b4f87588786d33b0eab6bd26cad283f619714cb75c8acd0753c24.js" defer="defer" crossorigin="anonymous"></script>
 
@@ -232,8 +75,10 @@ h3 {font-size: 20px; font-family: "Open Sans"}
 h4 {font-size: 18px; font-family: "Open Sans" bold}
 p  {font-size: 16px; font-family: "Open Sans"}
 
+a:hover {color: #00B599;}
+
 .singlewordcolor {
-    color: #00B599
+    color: #00B599;
 }
 .hero-homepage.hero {
 
@@ -242,31 +87,212 @@ p  {font-size: 16px; font-family: "Open Sans"}
     background-color: transparent !important;
 }
 
-.caption {
-        position: absolute;
-        left:0; top:105px;
-
-    }
-
-    .caption1 {
-        position: absolute;
-        left:20%; top:250px;
-
-    }
-
-    .caption2 {
-        position: absolute;
-        left:45%; top:300px;
-
-    }
 
     .isolation {
         position: absolute;
         top:450px;
-
     }
 
+    footer form {
+       margin: 15px 0;
+    }
+    #contact i {
+       margin: 10px 0 0 25px;
+    }
+    .medium-size-text {
+       font-size: 20px;
+    }
+    .italic-text {
+       font-style: italic;
+    }
+    .full {
+       width: 100%;
+    }
+    .gap {
+       height: 30px;
+       width: 100%;
+       clear: both;
+       display: block;
+    }
+    .footer {
+       background: #4A4A4A ;
+       height: auto;
+       padding-bottom: 30px;
+       position: relative;
+       width: 100%;
+       border-bottom: 1px solid #CCCCCC ;
+       border-top: 1px solid #DDDDDD ;
+       text-align: left;
+       padding: 1px 0;
+    }
+    .footer p {
+       margin: 0;
+    }
+    .footer img {
+       max-width: 100%;
+    }
+    .footer h3 {
+       border-bottom: 1px solid #BAC1C8 ;
+       color: #f3f3f3 ;
+       font-size: 18px;
+       font-weight: 600;
+       line-height: 27px;
+       padding: 40px 0 10px;
+       text-transform: uppercase;
+    }
+    .footer ul {
+       font-size: 13px;
+       list-style-type: none;
+       margin-left: 0;
+       padding-left: 0;
+       margin-top: 15px;
+       color: #7F8C8D ;
+    }
+    .footer ul li a {
+       padding: 0 0 5px 0;
+       display: block;
+    }
+    .footer a {
+       color: #f3f3f3
+    }
+    .supportLi h4 {
+       font-size: 20px;
+       font-weight: lighter;
+       line-height: normal;
+       margin-bottom: 0 !important;
+       padding-bottom: 0;
+    }
+    .newsletter-box input#appendedInputButton {
+       background: #FFFFFF ;
+       display: inline-block;
+       float: left;
+       height: 30px;
+       clear: both;
+       width: 100%;
+    }
+    .newsletter-box .btn {
+       border: medium none;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       -o-border-radius: 3px;
+       -ms-border-radius: 3px;
+       border-radius: 3px;
+       display: inline-block;
+       height: 40px;
+       padding: 0;
+       width: 100%;
+       color: #fff;
+    }
+    .newsletter-box {
+       overflow: hidden;
+    }
+    .bg-gray {
+       background-image: -moz-linear-gradient(center bottom, #BBBBBB  0%, #F0F0F0 100%);
+       box-shadow: 0 1px 0 #B4B3B3 ;
+    }
+    .social li {
+       background: none repeat scroll 0 0 #B5B5B5 ;
+       border: 2px solid #B5B5B5 ;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -o-border-radius: 50%;
+       -ms-border-radius: 50%;
+       border-radius: 50%;
+       float: left;
+       height: 36px;
+       line-height: 36px;
+       margin: 0 8px 0 0;
+       padding: 0;
+       text-align: center;
+       width: 36px;
+       transition: all 0.5s ease 0s;
+       -moz-transition: all 0.5s ease 0s;
+       -webkit-transition: all 0.5s ease 0s;
+       -ms-transition: all 0.5s ease 0s;
+       -o-transition: all 0.5s ease 0s;
+    }
+    .social li:hover {
+       transform: scale(1.15) rotate(360deg);
+       -webkit-transform: scale(1.1) rotate(360deg);
+       -moz-transform: scale(1.1) rotate(360deg);
+       -ms-transform: scale(1.1) rotate(360deg);
+       -o-transform: scale(1.1) rotate(360deg);
+    }
+    .social li a {
+       color: #EDEFF1 ;
+    }
+    .social li:hover {
+       border: 2px solid #2c3e50 ;
+       background: #2c3e50 ;
+    }
+    .social li a i {
+       font-size: 16px;
+       margin: 0 0 0 5px;
+       color: #EDEFF1  !important;
+    }
+    .footer-bottom {
+       background: #E3E3E3 ;
+       border-top: 1px solid #DDDDDD ;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+    .footer-bottom p.pull-left {
+       padding-top: 6px;
+    }
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic);
+* { margin: 0; }
+body {
+  margin: 0;
+  font-family: Source Sans Pro, sans-serif;
+}
+dl#simple-gallery {
+  position: relative;
+  background: #222;
+  font-size: 0;
+  padding: 3rem;
+  padding-bottom: 8rem;
+}
+dl#simple-gallery dt{
+  width: 12.5%;
+  min-width: 50px;
+  cursor: pointer;
+}
+dl#simple-gallery dt img {
+  width: 100%;
+  height: auto;
+}
+dl#simple-gallery dt:hover+dd, dl#simple-gallery dt:focus+dd {
+  opacity:1;
+}
+dl#simple-gallery dd {
+  position: absolute;
+  top: 3rem;
+  left: 22%;
+  opacity: 0;
+  transition: .7s opacity;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #fff;
+  padding-left: 0;
+  width: 40%;
+}
+dl#simple-gallery dd img{
+  width: 100%;
+  height: auto;
+  box-shadow:0 0 8px rgba(0,0,0,0.3);
+  display:block;
+  margin-bottom: 1rem;
+}
+
+.img-greyed {
+  opacity: 0.1;
+}
+
+.tick-mark {
+      padding: 0 15px;
+    }
 
 </style>
 
@@ -293,11 +319,11 @@ p  {font-size: 16px; font-family: "Open Sans"}
 
 
 
-
+    <div class="row">
       <div class="col-md-4 m-b-lg text-center">
         <div class="panel panel-default panel-floating">
-          <div class="panel-heading">
-            <%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
+          <div class="panel-heading" style="background-color: #ffffff; border-color:#ffffff">
+            <%= image_tag("11_sitemap_navigation_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
           </div>
           <div class="panel-body">
             <h1><span class="text-center singlewordcolor">drie</span></h1>
@@ -305,13 +331,13 @@ p  {font-size: 16px; font-family: "Open Sans"}
             <span style="display: block; font-size: 1.3em;"><span class="text-center singlewordcolor">£100 free credit</span></span>
           </div>
           <div class="panel-action m-b-lg">
-            <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="https://dashboard.drie.co/signup">Sign up</a></div>
+            <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="#drie-main">Learn more</a></div>
         </div>
       </div>
       <div class="col-md-4 m-b-lg text-center">
         <div class="panel panel-default panel-floating">
-          <div class="panel-heading">
-            <%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
+          <div class="panel-heading" style="background-color: #ffffff; border-color:#ffffff">
+            <%= image_tag("35_modeling_api_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
           </div>
           <div class="panel-body">
             <h1><span class="text-center singlewordcolor">drie push</span> beta</h1>
@@ -319,14 +345,14 @@ p  {font-size: 16px; font-family: "Open Sans"}
             <span style="display: block; font-size: 1.3em;"><span class="text-center singlewordcolor">1 month free trial</span></span>
           </div>
           <div class="panel-action m-b-lg">
-            <a class="btn btn-lg" style="background-color: #49305b ; border-color:#49305b; color: white" href="https://push.drie.co">Sign up</a>
+            <a class="btn btn-lg" style="background-color: #49305b ; border-color:#49305b; color: white" href="#drie-push">Learn more</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 m-b-lg text-center">
         <div class="panel panel-default panel-floating">
-          <div class="panel-heading">
-            <%= image_tag("36_online_privacy_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
+          <div class="panel-heading" style="background-color: #ffffff; border-color:#ffffff">
+            <%= image_tag("06_global_management_128.png", alt: 'drie.co', class: 'homepage-grid-icon') %>
           </div>
           <div class="panel-body">
             <h1><span class="text-center singlewordcolor">drie consult</span></h1>
@@ -340,7 +366,123 @@ p  {font-size: 16px; font-family: "Open Sans"}
       </div>
     </div>
 
+  <div class="row row-padded p-t text-center" style="border-top: 1px lightgrey solid;">
+    <a name="drie-main"></a>
+    <div class="col-sm-3 text-left">
+      <h3><%= image_tag("11_sitemap_navigation_128.png", alt: 'drie.co', class: 'homepage-grid-icon', style: 'height: 75px;') %></h3>
+      <h1><span class="text-center singlewordcolor">drie</span></h1>
+    </div>
+    <div class="col-sm-3 text-left">
+      <h3>VM 1VPCU <br /> 1GB RAM, 8GB SSD DISK</h3>
+      <span class="singlewordcolor" style="display: block; font-size: 1.3em;">+£100 free credit</span>
+      <h2>£0.11 per hour</h2>
+      <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="https://dashboard.drie.co/signup">Sign up</a>
+    </div>
+    <div class="col-sm-6 text-left">
+      <h3>drie micro plan</h3>
+      <p>Your application is deployed onto firewalled virtual machines. Each application gets its own load balancer and certificates ensuring end-to-end TLS traffic. Scale up to as many instances as you need.</p>
+      <ul class="list-unstyled text-left">
+        <li><span class="tick-mark">&#10004;</span> VM isolation between apps</li>
+        <li><span class="tick-mark">&#10004;</span> Regular automated VM patching</li>
+        <li><span class="tick-mark">&#10004;</span> End to end TLS encryption as default</li>
+        <li><span class="tick-mark">&#10004;</span> Encryption of config and code using Amazon Key Management Service</li>
+        <li><span class="tick-mark">&#10004;</span> Simple command line interface for deploying apps</li>
+        <li><span class="tick-mark">&#10004;</span> Simple API integration</li>
+      </ul>
+    </div>
+
   </div>
+
+  <div class="row row-padded row-bordered p-t text-left">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-sm-6">
+            <h3><%= image_tag("35_secured_backup_128.png", alt: 'drie.co', class: 'homepage-grid-icon', style: 'height: 75px;') %></h3>
+            <h3>Add a database to your application.</h3>
+          </div>
+          <div class="col-sm-6">
+            <h3>Amazon Aurora MySQL compatible database</h3>
+            <p>2CPUs, 15GB RAM, 1000GB Disk</p>
+            <h2>£0.90p per hour <br /> + £0.05 per extra GB per Month</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row-padded row-bordered p-t text-left" style="background-color: #f2f2f2;">
+  <div class="container-overflow-wrap">
+
+    <div class="container">
+    <a name="drie-push"></a>
+    <div class="col-sm-3">
+      <h3><%= image_tag("35_modeling_api_128.png", alt: 'drie.co', class: 'homepage-grid-icon', style: 'height: 75px;') %></h3>
+      <h1><span class="text-center singlewordcolor">drie push</span> <br /><span style="color:#49305b;">beta</span></h1>
+    </div>
+    <div class="col-sm-3">
+      <h3>Sign up to get</h3>
+      <span class="singlewordcolor" style="display: block; font-size: 1.3em;">1 month free trial</span>
+      <h2>£3 per month</h2>
+      <a class="btn btn-lg" style="background-color: #49305b; border-color:#49305b; color: white" href="https://push.drie.co">Sign up</a>
+    </div>
+    <div class="col-sm-6">
+      <h3>drie push</h3>
+      <p>A new way of developing apps. Stay in your workflow by deploying from git. Make every branch a website and share it with people in a few seconds. All in an isolated VM running only when your application receives a request.</p>
+      <ul class="list-unstyled ">
+        <li><span class="tick-mark">&#10004;</span> Deploy straight from git</li>
+        <li><span class="tick-mark">&#10004;</span> Build websites from every branch</li>
+        <li><span class="tick-mark">&#10004;</span> Run your app on an isolated VM in seconds</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-overflow-wrap">
+
+<div class="container">
+
+  <div class="row row-padded row-bordered p-t text-left">
+    <div class="col-sm-8">
+      <h3><%= image_tag("06_global_management_128.png", alt: 'drie.co', class: 'homepage-grid-icon', style: 'height: 75px;') %></h3>
+      <h1><span class="text-center singlewordcolor">drie consult</span></h1>
+      <h3>custom security assessment</h3>
+      <p>We provide our customers with the ability to understand their existing DevOps security holes and provide a prioritised action plan of how to fix them. We work with you to understand your threat landscape and identify key risks to your business by asking you what you really care about.</p>
+      <p>The areas we assess include:</p>
+      <div class="col-sm-6">
+        <ul class="list-unstyled text-left">
+          <li><span class="tick-mark">&#10004;</span> Data in transit</li>
+          <li><span class="tick-mark">&#10004;</span> Incident management</li>
+          <li><span class="tick-mark">&#10004;</span> Code building and deployment</li>
+          <li><span class="tick-mark">&#10004;</span> Availability and disaster recovery</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul class="list-unstyled text-left">
+          <li><span class="tick-mark">&#10004;</span> Encryption</li>
+          <li><span class="tick-mark">&#10004;</span> Authentication</li>
+          <li><span class="tick-mark">&#10004;</span> Firewalls</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <h3 style="height:75px"></h3>
+      <h1>£6,000</h1>
+      <h2>4 days</h2>
+      <span class="singlewordcolor" style="display: block; font-size: 1.3em;">+ Extensive report</span>
+      <h3></h3>
+      <a class="btn btn-lg" style="background-color: #00B599 ; border-color:#00B599; color: white" href="">Contact us</a>
+    </div>
+  </div>
+
+
+
+</div><!-- container ends here -->
+
+</div><!-- container overflow wrap ends here -->
 
   <%= render "contact_us_to_find_out_more" %>
 
