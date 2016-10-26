@@ -473,45 +473,7 @@
                 margin: 0;
                 font-family: Source Sans Pro, sans-serif;
             }
-            dl#simple-gallery {
-                position: relative;
-                background: #222;
-                font-size: 0;
-                padding: 3rem 3rem 8rem;
-            }
-            dl#simple-gallery dt {
-                width: 12.5%;
-                min-width: 50px;
-                cursor: pointer;
-            }
-            dl#simple-gallery dt img {
-                width: 100%;
-                height: auto;
-            }
-            dl#simple-gallery dt:focus+dd,
-            dl#simple-gallery dt:hover+dd {
-                opacity: 1;
-            }
-            dl#simple-gallery dd {
-                position: absolute;
-                top: 3rem;
-                left: 22%;
-                opacity: 0;
-                transition: 0.7s opacity;
-                text-align: center;
-                font-size: 1.4rem;
-                font-style: italic;
-                color: #fff;
-                padding-left: 0;
-                width: 40%;
-            }
-            dl#simple-gallery dd img {
-                width: 100%;
-                height: auto;
-                box-shadow: 0 0 8px rgba(0,0,0,0.3);
-                display: block;
-                margin-bottom: 1rem;
-            }
+
 
             .img-greyed {
                 opacity: 0.1;
@@ -553,6 +515,70 @@
     font-weight: normal;
     vertical-align: middle!important;
     outline: 0!important;}
+
+
+
+    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic);
+* { margin: 0; }
+body {
+  margin: 0;
+  font-family: Source Sans Pro, sans-serif;
+}
+dl#simple-gallery {
+  position: relative;
+
+  font-size: 0;
+  padding: 3rem;
+  padding-bottom: 8rem;
+}
+dl#simple-gallery dt{
+  width: 12.5%;
+  min-width: 50px;
+  cursor: pointer;
+}
+dl#simple-gallery dt img {
+
+  height: auto;
+}
+dl#simple-gallery dt:hover+dd, dl#simple-gallery dt:focus+dd {
+  opacity:1;
+}
+dl#simple-gallery dd {
+  position: absolute;
+  top: 3rem;
+  left: 22%;
+  opacity: 0;
+  transition: .7s opacity;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #fff;
+  padding-left: 0;
+  width: 40%;
+}
+dl#simple-gallery dd img{
+  width: 100%
+  height: auto;
+  box-shadow:0 0 8px rgba(0,0,0,0.3);
+  display:block;
+  margin-bottom: 1rem;
+}
+
+
+.showme{
+display: none;
+}
+.showhim:hover .showme{
+display : block;
+}
+
+.row:hover .select{
+    display: block
+}
+
+.select{
+    display: none;
+}
 
         </style>
 
