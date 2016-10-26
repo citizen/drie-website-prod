@@ -1,342 +1,431 @@
 <!doctype html>
 <html>
-<head>
+    <head>
 
-  <!-- EXPERIMENT A2 tracking code -->
-  <!-- Google Analytics Content Experiment code -->
-  <script>function utmx_section(){}function utmx(){}(function(){var
-  k='108454052-4',d=document,l=d.location,c=d.cookie;
-  if(l.search.indexOf('utm_expid='+k)>0)return;
-  function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-  indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-  length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-  '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-  '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-  '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-  valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-  '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-  </script><script>utmx('url','A/B');</script>
-  <!-- End of Google Analytics Content Experiment code -->
+        <!-- EXPERIMENT A2 tracking code -->
+        <!-- Google Analytics Content Experiment code -->
+        <script>
+            function utmx_section() {}
+            function utmx() {}(function () {
+                var k = '108454052-4',
+                    d = document,
+                    l = d.location,
+                    c = d.cookie;
+                if (l.search.indexOf('utm_expid=' + k) > 0)
+                    return;
+                function f(n) {
+                    if (c) {
+                        var i = c.indexOf(n + '=');
+                        if (i > -1) {
+                            var j = c.indexOf(';', i);
+                            return escape(c.substring(i + n.length + 1, j < 0
+                                ? c.length
+                                : j))
+                        }
+                    }
+                }
+                var x = f('__utmx'),
+                    xx = f('__utmxx'),
+                    h = l.hash;
+                d.write('<script src="http' + (l.protocol == 'https:'
+                    ? 's://ssl'
+                    : '://www') + '.google-analytics.com/ga_exp.js?utmxkey=' + k + '&utmx=' + (x
+                    ? x
+                    : '') + '&utmxx=' + (xx
+                    ? xx
+                    : '') + '&utmxtime=' + new Date().valueOf() + (h
+                    ? '&utmxhash=' + escape(h.substr(1))
+                    : '') + '" type="text/javascript" charset="utf-8"><\/script>')
+            })();
+        </script>
+        <script>
+            utmx('url', 'A/B');
+        </script>
+        <!-- End of Google Analytics Content Experiment code -->
 
-  <!-- General Head Content -->
-  <!-- meta tags -->
-<meta charset="utf-8" />
-<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+        <!-- General Head Content -->
+        <!-- meta tags -->
+        <meta charset="utf-8"/>
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
 
-<meta name="description" content="Official Bootstrap Themes and templates from the creators of Bootstrap including dashboards, admins, and marketing sites." />
+        <meta name="description" content="Official Bootstrap Themes and templates from the creators of Bootstrap including dashboards, admins, and marketing sites."/>
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="google-site-verification" content="4--Yv8-XVyrl4hAM2ceeBXt8H8iiI_3Ms3vDSIV5xN0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="google-site-verification" content="4--Yv8-XVyrl4hAM2ceeBXt8H8iiI_3Ms3vDSIV5xN0"/>
 
+        <!-- title tag-->
+        <title>
+            Bootstrap Themes
+        </title>
 
-<!-- title tag-->
-<title>
-  Bootstrap Themes
-</title>
+        <!-- search engine -->
+        <link rel="canonical" href="http://themes.getbootstrap.com/"/>
 
-<!-- search engine -->
-<link rel="canonical" href="http://themes.getbootstrap.com/" />
+        <!-- open graph -->
 
-<!-- open graph -->
+        <meta property="og:title" content="Bootstrap Themes"/>
+        <meta property="og:type" content="website"/>
 
+        <meta property="og:description" content="Official Bootstrap Themes and templates from the creators of Bootstrap including dashboards, admins, and marketing sites."/>
 
-  <meta property="og:title" content="Bootstrap Themes" />
-  <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://themes.getbootstrap.com/"/>
+        <meta property="og:site_name" content="Bootstrap Themes"/>
 
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link href="//cdn.shopify.com/s/files/1/0691/5403/t/128/assets/style.scss.css?12510731831507118242" rel="stylesheet" type="text/css" media="all"/>
 
+        <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script> <![endif]-->
 
-<meta property="og:description" content="Official Bootstrap Themes and templates from the creators of Bootstrap including dashboards, admins, and marketing sites." />
+        <!-- External content for head -->
+        <script>
+            //<![CDATA[
+            var Shopify = Shopify || {};
+            Shopify.shop = "strapping-io.myshopify.com";
+            Shopify.theme = {
+                "name": "v0.0.2",
+                "id": 66483909,
+                "theme_store_id": null,
+                "role": "main"
+            };
 
-<meta property="og:url" content="http://themes.getbootstrap.com/" />
-<meta property="og:site_name" content="Bootstrap Themes" />
+            //]]>
+        </script>
 
+        <script>
+            //<![CDATA[
+            (function () {
+                function asyncLoad() {
+                    var urls = ["https:\/\/dfjp7gc2z6ooe.cloudfront.net\/assets\/sky_pilot.js?shop=strapping-io.myshopify.com", "https:\/\/cdn.shopify.com\/s\/files\/1\/0691\/5403\/t\/125\/assets\/hitsanalytics.js?11608832055738061282\u0026shop=strapping-io.myshopify.com"];
+                    for (var i = 0; i < urls.length; i++) {
+                        var s = document.createElement('script');
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.src = urls[i];
+                        var x = document.getElementsByTagName('script')[0];
+                        x.parentNode.insertBefore(s, x);
+                    }
+                }
+                window.attachEvent
+                    ? window.attachEvent('onload', asyncLoad)
+                    : window.addEventListener('load', asyncLoad, false);
+            })();
 
+            //]]>
+        </script>
+        <script id="__st">
+            //<![CDATA[
+            var __st = {
+                "a": 6915403,
+                "offset": -25200,
+                "reqid": "9996b392-e63b-4051-97d2-c8a9c2feb081",
+                "pageurl": "themes.getbootstrap.com\/",
+                "u": "38a6b49a0bed",
+                "p": "home"
+            };
 
+            //]]>
+        </script>
+        <script>
+            //<![CDATA[
+            (function () {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//cdn.shopify.com/s/javascripts/shopify_stats.js?v=6';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            })();
 
-<!-- styles -->
-<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link href="//cdn.shopify.com/s/files/1/0691/5403/t/128/assets/style.scss.css?12510731831507118242" rel="stylesheet" type="text/css" media="all" />
+            //]]>
+        </script>
+        <script src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-668547562549a84f5dfa01ef82607987f85ecbe1c8301faf25059becfa208199.js" defer="defer"></script>
+        <script type="text/javascript">
 
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-<![endif]-->
+            window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+            window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+            window.ShopifyAnalytics.meta.currency = 'USD';
+            var meta = {};
+            for (var attr in meta) {
+                window.ShopifyAnalytics.meta[attr] = meta[attr];
+            }
+        </script>
 
+        <script type="text/javascript">
+            window.ShopifyAnalytics.merchantGoogleAnalytics = function () {};
+        </script>
 
-  <!-- External content for head -->
-  <script>
-//<![CDATA[
-      var Shopify = Shopify || {};
-      Shopify.shop = "strapping-io.myshopify.com";
-      Shopify.theme = {"name":"v0.0.2","id":66483909,"theme_store_id":null,"role":"main"};
+        <script type="text/javascript" class="analytics">
+            (window.gaDevIds = window.gaDevIds || []).push('BwiEti');
 
-//]]>
-</script>
+            (function () {
+                var customDocumentWrite = function (content) {
+                    var jquery = null;
 
+                    if (window.jQuery) {
+                        jquery = window.jQuery;
+                    } else if (window.Checkout && window.Checkout.$) {
+                        jquery = window.Checkout.$;
+                    }
 
-<script>
-//<![CDATA[
-    (function() {
-      function asyncLoad() {
-        var urls = ["https:\/\/dfjp7gc2z6ooe.cloudfront.net\/assets\/sky_pilot.js?shop=strapping-io.myshopify.com","https:\/\/cdn.shopify.com\/s\/files\/1\/0691\/5403\/t\/125\/assets\/hitsanalytics.js?11608832055738061282\u0026shop=strapping-io.myshopify.com"];
-        for (var i = 0; i < urls.length; i++) {
-          var s = document.createElement('script');
-          s.type = 'text/javascript';
-          s.async = true;
-          s.src = urls[i];
-          var x = document.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        }
-      }
-      window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
-    })();
+                    if (jquery) {
+                        jquery('body').append(content);
+                    }
+                };
 
-//]]>
-</script>
-<script id="__st">
-//<![CDATA[
-var __st={"a":6915403,"offset":-25200,"reqid":"9996b392-e63b-4051-97d2-c8a9c2feb081","pageurl":"themes.getbootstrap.com\/","u":"38a6b49a0bed","p":"home"};
-//]]>
-</script>
-<script>
-//<![CDATA[
-      (function() {
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-        s.src = '//cdn.shopify.com/s/javascripts/shopify_stats.js?v=6';
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-      })();
+                var analytics = document.createElement('script');
+                var loaded = false;
+                var onload = function () {
+                    if (loaded)
+                        return;
+                    loaded = true;
+                    window.ShopifyAnalytics.lib = window.trekkie.noConflict();
+                    window.ShopifyAnalytics.lib.initialize({
+                        "Trekkie": {
+                            "appName": "storefront",
+                            "environment": "production",
+                            "defaultAttributes": {
+                                "shopId": 6915403
+                            }
+                        },
+                        "Performance": {
+                            "navigationTimingApiMeasurementsEnabled": true,
+                            "navigationTimingApiMeasurementsSampleRate": 0.001
+                        },
+                        "Google Analytics": {
+                            "trackingId": "UA-67613229-1",
+                            "domain": "auto",
+                            "siteSpeedSampleRate": "10",
+                            "enhancedEcommerce": true,
+                            "doubleClick": true,
+                            "includeSearch": true
+                        }
+                    });
 
-//]]>
-</script>
-<script src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-668547562549a84f5dfa01ef82607987f85ecbe1c8301faf25059becfa208199.js" defer="defer"></script>
-      <script type="text/javascript">
+                    window.ShopifyAnalytics.lib.ready(function () {
 
-      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-      window.ShopifyAnalytics.meta.currency = 'USD';
-      var meta = {};
-      for (var attr in meta) {
-        window.ShopifyAnalytics.meta[attr] = meta[attr];
-      }
+                        ga('require', 'linker');
+                        function addListener(element, type, callback) {
+                            if (element.addEventListener) {
+                                element.addEventListener(type, callback);
+                            } else if (element.attachEvent) {
+                                element.attachEvent('on' + type, callback);
+                            }
+                        }
+                        function decorate(event) {
+                            event = event || window.event;
+                            var target = event.target || event.srcElement;
+                            if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+                                ga(function (tracker) {
+                                    var linkerParam = tracker.get('linkerParam');
+                                    document.cookie = '_shopify_ga=' + linkerParam + '; path=/';
+                                });
+                            }
+                        }
+                        addListener(window, 'load', function () {
+                            for (var i = 0; i < document.forms.length; i++) {
+                                var action = document.forms[i].getAttribute('action');
+                                if (action && action.indexOf('/cart') >= 0) {
+                                    addListener(document.forms[i], 'submit', decorate);
+                                }
+                            }
+                            for (var i = 0; i < document.links.length; i++) {
+                                var href = document.links[i].getAttribute('href');
+                                if (href && href.indexOf('/checkout') >= 0) {
+                                    addListener(document.links[i], 'click', decorate);
+                                }
+                            }
+                        });
 
-      </script>
+                        var originalDocumentWrite = document.write;
+                        document.write = customDocumentWrite;
+                        try {
+                            window.ShopifyAnalytics.merchantGoogleAnalytics.call(this);
+                        } catch (error) {};
+                        document.write = originalDocumentWrite;
 
-      <script type="text/javascript">
-        window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+                        window.ShopifyAnalytics.lib.page(null, {"pageType": "home"});
 
-        };
-      </script>
+                    });
+                }
+                analytics.onload = onload;
+                analytics.onreadystatechange = function () {
+                    if (!/complete|loaded/.test(analytics.readyState))
+                        return;
+                    onload();
+                }
+                analytics.async = true;
+                analytics.src = 'https://cdn.shopify.com/s/javascripts/trekkie.storefront.min.js?v=2016.09.01.1';
+                document.getElementsByTagName('head')[0].appendChild(analytics);
 
-      <script type="text/javascript" class="analytics">
-        (window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+                var eventsListenerScript = document.createElement('script');
+                eventsListenerScript.async = true;
+                eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-91b4691a5a0a9b8881b8d482fa57139c6710eb703344a18c284e80917fc3ddbf.js";
+                document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 
-        (function () {
-          var customDocumentWrite = function(content) {
-            var jquery = null;
+            })();
+        </script>
 
-            if (window.jQuery) {
-              jquery = window.jQuery;
-            } else if (window.Checkout && window.Checkout.$) {
-              jquery = window.Checkout.$;
+        <script src="//cdn.shopify.com/s/assets/storefront/express_buttons-27e21b014f9b4f87588786d33b0eab6bd26cad283f619714cb75c8acd0753c24.js" defer="defer" crossorigin="anonymous"></script>
+
+        <style type="text/css">
+
+            h1 {
+                font-size: 32px;
+                font-family: "Open Sans";
+            }
+            h2 {
+                font-size: 24px;
+                font-family: "Open Sans";
+            }
+            h3 {
+                font-size: 20px;
+                font-family: "Open Sans";
+            }
+            h4 {
+                font-size: 18px;
+                font-family: "Open Sans" bold;
+            }
+            p {
+                font-size: 16px;
+                font-family: "Open Sans";
             }
 
-            if (jquery) {
-              jquery('body').append(content);
+            .singlewordcolor {
+                color: #00B599;
             }
-          };
+            .hero-homepage.hero {
 
-          var analytics = document.createElement('script');
-          var loaded = false;
-          var onload = function() {
-            if (loaded) return;
-            loaded = true;
-            window.ShopifyAnalytics.lib = window.trekkie.noConflict();
-            window.ShopifyAnalytics.lib.initialize(
-              {"Trekkie":{"appName":"storefront","environment":"production","defaultAttributes":{"shopId":6915403}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.001},"Google Analytics":{"trackingId":"UA-67613229-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true}}
-            );
+                padding-bottom: 28px;
 
-            window.ShopifyAnalytics.lib.ready(function() {
+                background-color: transparent !important;
+            }
 
-      ga('require', 'linker');
-      function addListener(element, type, callback) {
-        if (element.addEventListener) {
-          element.addEventListener(type, callback);
-        }
-        else if (element.attachEvent) {
-          element.attachEvent('on' + type, callback);
-        }
-      }
-      function decorate(event) {
-        event = event || window.event;
-        var target = event.target || event.srcElement;
-        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
-          ga(function (tracker) {
-            var linkerParam = tracker.get('linkerParam');
-            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
-          });
-        }
-      }
-      addListener(window, 'load', function(){
-        for (var i=0; i < document.forms.length; i++) {
-          var action = document.forms[i].getAttribute('action');
-          if(action && action.indexOf('/cart') >= 0) {
-            addListener(document.forms[i], 'submit', decorate);
-          }
-        }
-        for (var i=0; i < document.links.length; i++) {
-          var href = document.links[i].getAttribute('href');
-          if(href && href.indexOf('/checkout') >= 0) {
-            addListener(document.links[i], 'click', decorate);
-          }
-        }
-      });
+            .caption {
+                position: absolute;
+                left: 0;
+                top: 105px;
 
+            }
 
-              var originalDocumentWrite = document.write;
-              document.write = customDocumentWrite;
-              try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-              document.write = originalDocumentWrite;
+            .caption1 {
+                position: absolute;
+                left: 20%;
+                top: 250px;
 
+            }
 
-        window.ShopifyAnalytics.lib.page(
-          null,
-          {"pageType":"home"}
-        );
+            .caption2 {
+                position: absolute;
+                left: 45%;
+                top: 300px;
 
+            }
 
-            });
-          }
-          analytics.onload = onload;
-          analytics.onreadystatechange = function() {
-            if (!/complete|loaded/.test(analytics.readyState)) return;
-            onload();
-          }
-          analytics.async = true;
-          analytics.src = 'https://cdn.shopify.com/s/javascripts/trekkie.storefront.min.js?v=2016.09.01.1';
-          document.getElementsByTagName('head')[0].appendChild(analytics);
+            .isolation {
+                position: absolute;
+                top: 450px;
 
-      var eventsListenerScript = document.createElement('script');
-      eventsListenerScript.async = true;
-      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-91b4691a5a0a9b8881b8d482fa57139c6710eb703344a18c284e80917fc3ddbf.js";
-      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+            }
 
-        })();
-      </script>
+        </style>
 
-<script src="//cdn.shopify.com/s/assets/storefront/express_buttons-27e21b014f9b4f87588786d33b0eab6bd26cad283f619714cb75c8acd0753c24.js" defer="defer" crossorigin="anonymous"></script>
+        <link rel="stylesheet" media="all" href="//cdn.shopify.com/s/assets/storefront/additional-checkout-buttons-ae777fb5a35686e712f15ee06ea7d1bf240ffa3214125e4741ed905663cf5d32.css"/>
 
-<style type="text/css">
+    </head>
 
-h1 {font-size: 32px; font-family: "Open Sans"}
-h2 {font-size: 24px; font-family: "Open Sans"}
-h3 {font-size: 20px; font-family: "Open Sans"}
-h4 {font-size: 18px; font-family: "Open Sans" bold}
-p  {font-size: 16px; font-family: "Open Sans"}
+    <body id="bootstrap-themes" class="template-index">
+        <div class="container-overflow-wrap">
 
-.singlewordcolor {
-    color: #00B599
-}
-.hero-homepage.hero {
+            <div class="container">
 
-    padding-bottom: 28px;
+                <%= render "shared/menu" %>
 
-    background-color: transparent !important;
-}
+                <div class="row homepage-grid p-t text-center">
+                    <div class="page-header">
+                        <h1 class="text-center singlewordcolor">Meet the stellar team behind drie!</h1>
+                        <h3>Our team, your business</h3>
+                    </div>
+                </div>
 
-.caption {
-        position: absolute;
-        left:0; top:105px;
+                <div class="row  homepage-grid row-bordered p-t text-center">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <%= image_tag("kalbir_card.png", alt: 'drie.co', class: 'img-responsive') %>
+                        <%= image_tag("ulrike_card.png", alt: 'drie.co', class: 'img-responsive') %>
+                        <%= image_tag("tom_card.png", alt: 'drie.co', class: 'img-responsive') %>
+                    </div>
+                </div>
 
-    }
+            </div>
 
-    .caption1 {
-        position: absolute;
-        left:20%; top:250px;
+            <%= render "contact_us_to_find_out_more" %>
 
-    }
+            <%= render "shared/footer" %>
 
-    .caption2 {
-        position: absolute;
-        left:45%; top:300px;
+            <!-- General JavaScript -->
+            <!-- jquery.js -->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
 
-    }
+            <!-- bootstrap.js -->
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
 
-    .isolation {
-        position: absolute;
-        top:450px;
+            <script>
+                $('html').removeClass('no-js').addClass('js')
+            </script>
 
-    }
+            <!-- Our main app.js -->
+            <script src="//cdn.shopify.com/s/files/1/0691/5403/t/128/assets/app.js?12510731831507118242" type="text/javascript"></script>
 
+            <!-- Async Script for Twitter Widgets -->
+            <script>
+                window.twttr = (function (d, s, id) {
+                    var js,
+                        fjs = d.getElementsByTagName(s)[0],
+                        t = window.twttr || {};
+                    if (d.getElementById(id))
+                        return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
 
+                    t._e = [];
+                    t.ready = function (f) {
+                        t._e.push(f);
+                    };
 
-</style>
+                    return t;
+                }(document, "script", "twitter-wjs"));
+            </script>
 
-
-<link rel="stylesheet" media="all" href="//cdn.shopify.com/s/assets/storefront/additional-checkout-buttons-ae777fb5a35686e712f15ee06ea7d1bf240ffa3214125e4741ed905663cf5d32.css" />
-
-</head>
-
-<body id="bootstrap-themes" class="template-index" >
-  <div class="container-overflow-wrap">
-
-  <div class="container">
-
-    <%= render "shared/menu" %>
-
-
-    <div class="row homepage-grid p-t text-center">
-      <div class="page-header">
-          <h1 class="text-center singlewordcolor">Meet the stellar team behind drie!</h1>
-          <h3>Our team, your business</h3>
-      </div>
-    </div>
-
-    <div class="row  homepage-grid row-bordered p-t text-center">
-      <div class="col-sm-8 col-sm-offset-2">
-        <%= image_tag("kalbir_card.png", alt: 'drie.co', class: 'img-responsive') %>
-        <%= image_tag("ulrike_card.png", alt: 'drie.co', class: 'img-responsive') %>
-        <%= image_tag("tom_card.png", alt: 'drie.co', class: 'img-responsive') %>
-      </div>
-    </div>
-
-  </div>
-
-  <%= render "contact_us_to_find_out_more" %>
-
-  <%= render "shared/footer" %>
-
-
-  <!-- General JavaScript -->
-  <!-- jquery.js -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-
-<!-- bootstrap.js -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
-
-<script>
-  $('html').removeClass('no-js').addClass('js')
-</script>
-
-<!-- Our main app.js -->
-<script src="//cdn.shopify.com/s/files/1/0691/5403/t/128/assets/app.js?12510731831507118242" type="text/javascript"></script>
-
-<!-- Async Script for Twitter Widgets -->
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
-
-
-<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
-</html>
+            <script type="text/javascript">
+                /* <![CDATA[ */
+                (function (d, s, a, i, j, r, l, m, t) {
+                    try {
+                        l = d.getElementsByTagName('a');
+                        t = d.createElement('textarea');
+                        for (i = 0; l.length - i; i++) {
+                            try {
+                                a = l[i].href;
+                                s = a.indexOf('/cdn-cgi/l/email-protection');
+                                m = a.length;
+                                if (a && s > -1 && m > 28) {
+                                    j = 28 + s;
+                                    s = '';
+                                    if (j < m) {
+                                        r = '0x' + a.substr(j, 2) | 0;
+                                        for (j += 2; j < m && a.charAt(j) != 'X'; j += 2)
+                                            s += '%' + ('0' + ('0x' + a.substr(j, 2) ^ r).toString(16)).slice(-2);
+                                        j++;
+                                        s = decodeURIComponent(s) + a.substr(j, m - j)
+                                    }
+                                    t.innerHTML = s.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                                    l[i].href = 'mailto:' + t.value
+                                }
+                            } catch (e) {}
+                        }
+                    } catch (e) {}
+                })(document);/* ]]> */
+            </script>
+        </body>
+    </html>
