@@ -1,31 +1,31 @@
 <%= render "shared/headerv2" %>
-    <body id="bootstrap-themes" class="template-index">
-        <div class="container-overflow-wrap">
+<body id="bootstrap-themes" class="template-index">
+    <div class="container-overflow-wrap">
 
-            <div class="container">
+        <div class="container">
 
-                <%= render "shared/menu" %>
+            <%= render "shared/menu" %>
 
-                <div class="row homepage-grid p-t text-center">
-                    <div class="page-header">
-                        <h1 class="text-center singlewordcolor">Meet the stellar team behind drie!</h1>
-                        <h3>Our team, your business</h3>
-                    </div>
+            <div class="row homepage-grid p-t text-center">
+                <div class="page-header">
+                    <h1 class="text-center singlewordcolor">Meet the stellar team behind drie!</h1>
+                    <h3>Our team, your business</h3>
                 </div>
-
-                <div class="row  homepage-grid row-bordered p-t text-center">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <%= image_tag("kalbir_card.png", alt: 'drie.co', class: 'img-responsive') %>
-                        <%= image_tag("ulrike_card.png", alt: 'drie.co', class: 'img-responsive') %>
-                        <%= image_tag("tom_card.png", alt: 'drie.co', class: 'img-responsive') %>
-                    </div>
-                </div>
-
             </div>
 
-            <%= render "contact_us_to_find_out_more" %>
-            <%= render "shared/footer" %>
-            <%= render "shared/extrabootstrapstuff" %>
+            <div class="row  homepage-grid row-bordered p-t text-center">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <%= image_tag("kalbir_card.png", alt: 'drie.co', class: 'img-responsive') %>
+                    <%= image_tag("ulrike_card.png", alt: 'drie.co', class: 'img-responsive') %>
+                    <%= image_tag("tom_card.png", alt: 'drie.co', class: 'img-responsive') %>
+                </div>
+            </div>
 
-        </body>
-    </html>
+        </div>
+
+        <%= render "contact_us_to_find_out_more" %>
+        <%= render "shared/footer" %>
+        <%= render "shared/extrabootstrapstuff" %>
+
+    </body>
+</html>
