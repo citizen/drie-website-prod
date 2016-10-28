@@ -1,11 +1,7 @@
 .dotted {
     /* padding: 2.25em 1.6875em; */
     background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 181, 153, 0.5), rgba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 181, 153, 0.5), rgba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(0, 181, 153, 0.5), rgba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
     background-image: repeating-radial-gradient(center center, rgba(0, 181, 153, 0.5), rgba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
-    -webkit-background-size: 5px 5px;
-    -moz-background-size: 5px 5px;
     background-size: 5px 5px;
 }
 .bg-clear {
@@ -26,12 +22,12 @@
     border-radius: 0px;
 }
 .firstname, .lastname, .email {
-
+   
     padding: 0 5% 0 0;
     float: left;
 }
 .email {
-
+    
     padding: 0 5% 0 0;
     float: left;
 }
@@ -77,7 +73,15 @@ footer form {
 .footer img {
     max-width: 100%;
 }
-
+.footer h3 {
+    border-bottom: 1px solid #BAC1C8;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 40px 0 10px;
+    text-transform: uppercase;
+}
 .footer ul {
     font-size: 13px;
     list-style-type: none;
@@ -110,10 +114,6 @@ footer form {
 }
 .newsletter-box .btn {
     border: medium none;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
-    -ms-border-radius: 3px;
     border-radius: 3px;
     display: inline-block;
     height: 40px;
@@ -131,10 +131,6 @@ footer form {
 .social li {
     background: none repeat scroll 0 0 #B5B5B5;
     border: 2px solid #B5B5B5;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    -ms-border-radius: 50%;
     border-radius: 50%;
     float: left;
     height: 36px;
@@ -235,7 +231,6 @@ h6.description {
 }
 .profile .img-box:after, .img-box ul, .img-box ul li {
     -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
 }
 .img-box ul i {
@@ -262,7 +257,6 @@ h6.description {
 }
 .img-box ul a {
     -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
 .img-box a:hover li {
@@ -297,8 +291,7 @@ i.red {
 }
 .db-pricing-seven:hover {
     margin-top: 5px;
-    -moz-transition: margin-top 0.25s ease 0s;
-    -ms-transition: margin-top 0.25s ease 0s;
+    -webkit-transition: margin-top 0.25s ease 0s;
     transition: margin-top 0.25s ease 0s;
 }
 .db-pricing-seven ul {

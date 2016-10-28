@@ -24,7 +24,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 # gem 'image_optim_rails'
 # gem 'image_optim_pack'
 
-gem 'rack-mini-profiler'
+# gem 'rack-mini-profiler'
 
 # For memory profiling (requires Ruby MRI 2.1+)
 gem 'memory_profiler'
