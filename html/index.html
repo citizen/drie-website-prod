@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>drie - Build, deploy and scale your apps in the cloud with AWS security best practices</title>
+        <meta name="keywords" content="drie, cloud security">
+        <meta name="description" content="Better cloud security in minutes">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/libs/bootstrap.css">
+
+        <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/libs/fontello.css">
+        <link rel="stylesheet" href="css/libs/magnific-popup.css">         
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>           
+    </head>
+
+    <body>        
+<header>
+  <nav class="navbar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="logo" href="index.html">drie<img src="images/logo.png" alt="drie.co"></a>
+    </div>
+     <div id="menu" class="collapse navbar-collapse">      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="pricing.html">Pricing</a></li>
+       
+        <li><a href="contact_us.html">Contact us</a></li>      
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+</header>          
+        <main>
+            <section class="about">
+            	<div class="container">
+	            	<div class="page-header page-header--index">
+	            		<h1 class="main-title"><span>drie</span> manages your <span>cloud platform</span> <span>securely</span>, so you don't have to.</h1>
+	            		<h2 class="sub-title">Build, deploy and scale your apps in the cloud with AWS security best practices</h2>
+	            		<a href="https://dashboard.drie.co/signup" class="btn btn-primary">Sign up for free</a>
+	            	</div>
+	            	<div class="features">
+	            		<div class="row">
+	            			<div class="col-sm-4">
+	            				<div class="feature">
+	            					<div class="feature__img"><img src="images/secure_lock.png" alt=""></div>
+	            					<h3 class="feature__title">Running services securely in the cloud is hard </h3>
+	            					<p class="feature__descr">We get you on the cloud with AWS security best practices in one command.</p>
+	            					
+	            				</div>
+	            			</div>
+	            			<div class="col-sm-4">
+	            				<div class="feature">
+	            					<div class="feature__img"><img src="images/secure_mobile.png" alt=""></div>
+	            					<h3 class="feature__title">
+It also takes way too long to build your own secure cloud platform</h3>
+	            					<p class="feature__descr">Build a secure environment in less than 15 minutes with drie.</p>
+	            					
+	            				</div>
+	            			</div>
+	            			<div class="col-sm-4">
+	            				<div class="feature">
+	            					<div class="feature__img"><img src="images/secure_folder.png" alt=""></div>
+	            					<h3 class="feature__title">
+And it's expensive to do so</h3>
+	            					<p class="feature__descr">We give you an AWS secure environment out of the box for £80 a month.</p>
+	            					
+	            				</div>
+	            			</div>
+	            		</div>
+	            	</div>
+	            	<div class="video-block">
+	            		<h2 class="block-title block-title--alone">See for yourself how quick drie really is</h2>
+	            		<div class="row">
+	            			<div class="col-md-5 pull-right">
+	            				<div class="video-about">
+	            					<h3 class="video-about__title">We provide the AWS glue</h3>
+		            				<p class="video-about__descr">We combine Amazon's EC2, Identity and Access Management (IAM), Key Management (KMS), Databases (RDS), Certificates, Load Balancing (ELB) and more to give you a secure envrionment to run your application in.</p>
+		            				<button id="btn-play" class="btn btn-primary video-about__btn"><span class="play-btn"><i class="icon-play"></i></span>Play video</button>
+	            				</div>
+	            			</div>
+	            			<div class="col-md-7 pull-left">
+	            				<div id="media-player" class="video-frame">
+	            					<video id="video" title="" poster="images/video-poster.jpg">
+		            					<source src="video/drie.mp4" type="video/mp4">
+		            					
+		            					<img src="https://djrbatmgo1l7z.cloudfront.net/assets/llo/snow_cover-5298d641f7ade6f868898161365535b35c8d86c894e1c0fcec680ddcfd9f3099.jpg" alt="Your browser does not support HTML5 video.">
+            						</video>
+            						<button id='play-pause' class='play'></button>
+	            				</div>
+	            			</div>	            			
+	            		</div>
+	            	</div>
+            	</div>
+            </section>
+            <div class="page-devider page-devider--green">
+            	<div class="container">
+            		<h2 class="block-title block-title--not-alone white">Create a drie account today</h2>
+            		<p class="block-subtitle white">Join drie today to benefit from secure and fast deployment.</p>
+            		<div class="signup">
+            			
+            				
+            				<a href="https://dashboard.drie.co/signup" class="btn btn-success signup__btn">Sign up for free</a>
+            		
+            		</div>
+            	</div>
+            </div>
+            <section class="deploy">            	
+        		<div class="deploy__header">  
+            		<div class="container-fluid">          		
+	            		<h2 class="block-title block-title--not-alone">Try deploying your apps for</h2>
+	            		<p class="block-subtitle">drie supports the language you are already using</p>
+	            		<div class="languages">
+	            			<ul class="languages__list">
+	            				<li><img src="images/ruby.png" alt="ruby"></li>
+	            				<li><img src="images/php.png" alt="php"></li>
+	            				<li><img src="images/node.png" alt="node"></li>
+	            				<li><img src="images/java.png" alt="java"></li>
+	            				<li><img src="images/golang.png" alt="golang"></li>
+	            			</ul>
+	            		</div>
+            		</div>
+        		</div>            	
+            	<div class="container">
+            		<div class="tabs-vertical languages-tabs">
+            			<div class="row">
+            				<div class="col-md-5 col-sm-3">
+            					<ul class="nav nav-tabs">
+								  <li class="active"><a data-toggle="tab" href="#ruby-on-rails">Ruby on rails</a></li>
+								  <li><a data-toggle="tab" href="#php">PHP</a></li>
+								  <li><a data-toggle="tab" href="#nodejs">Node JS</a></li>
+								  <li><a data-toggle="tab" href="#java">Java</a></li>
+								  <li><a data-toggle="tab" href="#go-lang">Go Lang</a></li>
+								</ul>
+            				</div>
+            				<div class="col-md-7 col-sm-9">
+            					<div class="tab-content">
+								  <div id="ruby-on-rails" class="tab-pane fade in active">
+								  	<h2>Ruby on Rails</h2>	
+									<p><span class="main-descr">Deploy using Ruby on Rails</span> The drie specific files are .buildpacks which tells us how to build your app</p>
+								    <a class="btn btn-primary video-popup" href="http://docs.drie.co/docs/deploy-a-ruby-app-on-drie-1">Run Ruby on Rails app</a>    
+								  </div>
+								  <div id="php" class="tab-pane fade">
+								    <h2>PHP</h2>	
+									<p><span class="main-descr">Deploy using PHP</span> The drie specific files are .buildpacks which tells us how to build your app</p>
+								    <a class="btn btn-primary video-popup" href="http://docs.drie.co/docs/deploy-a-php-app-on-drie">Run PHP app</a>  
+								  </div>
+								  <div id="nodejs" class="tab-pane fade">
+								    <h2>Node JS</h2>	
+									<p><span class="main-descr">Deploy using Node JS</span> The drie specific files are .buildpacks which tells us how to build your app</p>
+								    <a class="btn btn-primary video-popup" href="http://docs.drie.co/docs/deploy-a-nodejs-express-4-app-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.20.1474651886335&__hsfp=836449569">Run Node JS app</a>  
+								  </div>
+								  <div id="java" class="tab-pane fade">
+								    <h2>Java</h2>	
+									<p><span class="main-descr">Deploy using Java</span> The drie specific files are .buildpacks which tells us how to build your app</p>
+								    <a class="btn btn-primary video-popup" href="http://docs.drie.co/docs/deploy-a-java-spark-microframework-app-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.22.1474651886335&__hsfp=836449569">Run Java app</a>  
+								  </div>
+								  <div id="go-lang" class="tab-pane fade">
+								    <h2>Go Lang</h2>	
+									<p><span class="main-descr">Deploy using Go Lang</span> The drie specific files are .buildpacks which tells us how to build your app</p>
+								    <a class="btn btn-primary video-popup" href="http://docs.drie.co/docs/deploy-a-google-go-golang-rest-api-server-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.22.1474651886335&__hsfp=836449569">Run Go Lang app</a>  
+								  </div>
+								</div>           					
+            				</div>
+            			</div>					
+            		</div>
+            		<div class="SME-block">
+            			<h2 class="block-title block-title--alone">Embrace compliance and security regulations</h2>
+            			<div class="SMEs">
+            				<div class="row">
+            					<div class="col-sm-4">
+            						<div class="SME">
+            							<div class="img-wraper"><img src="images/SME_folder.jpg" alt="drie government"></div>
+            							<h3 class="SME__title">Government</h3>
+            							<p class="SME__descr">drie has been built to meet <a href="https://www.gov.uk/government/publications/cloud-service-security-principles/cloud-service-security-principles" class="SME__link">CESG's Cloud Security Principles</a>. The drie team brings experience of building and running a platform for government services with millions of users with over 250 developers working on it. We provide a way to get services that hold official data up and running very quickly. <a href="" class="SME__link"></a></p>
+            						</div>
+            					</div>
+            					<div class="col-sm-4">
+            						<div class="SME">
+            							<div class="img-wraper"><img src="images/SME_netbook.jpg" alt=" drie financial services"></div>
+            							<h3 class="SME__title">Financial Services</h3>
+            							<p class="SME__descr">Security concerns and regulatory constraints are two key drivers for cloud adoption in financial services. drie offers you infrastructure flexibility, reduced total cost of ownership and shortened time to market whilst providing a strong security layer on top.<a href="" class="SME__link"></a></p>
+            						</div>
+            					</div>
+            					<div class="col-sm-4">
+            						<div class="SME">
+            							<div class="img-wraper"><img src="images/SME_scan.jpg" alt="drie healthcare"></div>
+            							<h3 class="SME__title">Healthcare</h3>
+            							<p class="SME__descr">Security concerns in healthcare are real considering all of the sensitive data held. drie provides an all-in-one solution that tackles 3 needs of healthcare players; data security, lowering the cost of IT maintenance, and staffing challenges. <a href="" class="SME__link"></a></p>
+            						</div>
+            					</div>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </section>
+            <section class="clients">
+            	<div class="container">
+            		<h2 class="block-title block-title--alone">Shaped by our<br>outstanding clients & partners</h2>
+            		<div class="row">
+            			<div class="col-md-10 col-md-offset-1"> 
+							<div class="clients-slider">
+		            			<div id="sync1" class="owl-carousel">
+									<div id="cylon" class="item">
+									  	<div class="row">
+									  		<div class="col-sm-3">
+									  			<div><a href="https://cylonlab.com"><img src="images/cylon.png" alt="cylon"></a></div>
+									  		</div>
+									  		<div class="col-sm-9">
+									  			<blockquote>
+									  				drie got selected from 100s of applications to participate in Cyber London's (CyLon) cyber security accelerator and is one of eight start ups participating.
+									  			</blockquote>
+									  			<p class="author"></p>
+									  		</div>
+									  	</div>
+								    </div>
+								    <div id="amazon" class="item">
+									  	<div class="row">
+									  		<div class="col-sm-3">
+									  			<div><a href="https://aws.amazon.com"><img src="images/amazon.png" alt="amazon"></a></div>
+									  		</div>
+									  		<div class="col-sm-9">
+									  			<blockquote>
+									  				drie is an accredited AWS Technology Partner 
+									  			</blockquote>
+									  			<p class="author"></p>
+									  		</div>
+									  	</div>
+								    </div>	
+								    <div id="member" class="item">
+									  	<div class="row">
+									  		<div class="col-sm-3">
+									  			<div><a href="https://CyberExchange.uk.net"><img src="images/member.png" alt="member"></a></div>
+									  		</div>
+									  		<div class="col-sm-9">
+									  			<blockquote>
+									  				drie is part of Cyber Exchange, a wider cyber security community, where together we promote best practice to businesses & the not for profit sector.
+									  			</blockquote>
+									  			<p class="author"></p>
+									  		</div>
+									  	</div>
+								    </div>	
+								    <div id="agileventures" class="item">
+									  	<div class="row">
+									  		<div class="col-sm-3">
+									  			<div><a href="http://www.agileventures.org/"><img src="images/agile.png" alt="agileventures"></a></div>
+									  		</div>
+									  		<div class="col-sm-9">
+									  			<blockquote>
+									  				drie is proud to support agile ventures in their mission to bring affordable web services to the not for profit sectors 
+									  			</blockquote>
+									  			<p class="author"></p>
+									  		</div>
+									  	</div>
+								    </div>
+								    <div id="caci" class="item">
+									  	<div class="row">
+									  		<div class="col-sm-3">
+									  			<div><a href="https://www.caci.co.uk/"><img src="images/caci.png" alt="caci"></a></div>
+									  		</div>
+									  		<div class="col-sm-9">
+									  			<blockquote>
+									  				drie has announced a joint G-Cloud 8 offering with IT giant services giant CACI in an endeavour to advance cloud infrastructure use within public services 
+									  			</blockquote>
+									  			<p class="author"></p>
+									  		</div>
+									  	</div>
+								    </div>
+								    <div id="computing" class="item">
+									  	<div class="row">
+									  		<div class="col-sm-3">
+									  			<div><a href="http://events.computing.co.uk/securityexcellence/static/2016-shortlist"><img src="images/computing.png" alt="computing"></a></div>
+									  		</div>
+									  		<div class="col-sm-9">
+									  			<blockquote>
+									  				We have been shortlisted for two Computing Security Excellence awards: Cloud Security Award and Woman of the Year Award
+									  			</blockquote>
+									  			<p class="author"></p>
+									  		</div>
+									  	</div>
+								    </div>
+							
+		            			</div>
+									<br>
+		            			<div id="sync2" class="owl-carousel">
+		            				<div class="item"><div class="client">Cylon<img src="images/cylon.png" alt="cylon"></div class="client"></div>
+		            				<div class="item"><div class="client">Amazon<img src="images/amazon.png" alt="amazon"></div class="client"></div>
+		            				<div class="item"><div class="client">Memeber<img src="images/member.png" alt="member"></div class="client"></div>
+		            				<div class="item"><div class="client">Agileventures<img src="images/agile.png" alt="agileventures"></div class="client"></div>
+		            				<div class="item"><div class="client">CACI<img src="images/caci.png" alt="agileventures"></div class="client"></div>
+		            				<div class="item"><div class="client">Computing<img src="images/computing.png" alt="agileventures"></div class="client"></div>
+
+		            			</div> 
+	            			</div>
+            			</div>    					 					
+            		</div>
+            	</div>
+            </section>
+            <section class="drie-uses">
+            	<div class="container">
+            		<h2 class="block-title block-title--not-alone">Why use drie?</h2>
+            		<p class="block-subtitle">Use drie because you want to build something new - like a new experimental service for your users separate from your main corporate applications, or a new service for managing interactions with a third party API.</p>
+        			<div class="uses">
+        				<div class="row">
+        					<div class="col-sm-4">
+        						<div class="SME">
+        							<div class="img-wraper"><img src="images/loop.jpg" alt="Connection"></div>
+        							<h3 class="SME__title">Small</h3>
+        							<ul class="SME__list list">
+        								<li><span class="icon-ok"></span>You’re thinking about microservices</li>
+        							</ul>
+        						</div>
+        					</div>
+        					<div class="col-sm-4">
+        						<div class="SME">
+        							<div class="img-wraper"><img src="images/layers.jpg" alt="Cube"></div>
+        							<h3 class="SME__title">Fast</h3>
+        							<ul class="SME__list list">
+        								<li><span class="icon-ok"></span>You want to get a version of your application up and running in minutes</li>
+        								<li><span class="icon-ok"></span>You want to be making changes to it multiple times per day/week</li>
+        							</ul>
+        						</div>
+        					</div>
+        					<div class="col-sm-4">
+        						<div class="SME">
+        							<div class="img-wraper"><img src="images/network.jpg" alt="Cube"></div>
+        							<h3 class="SME__title">Real</h3>
+        							<ul class="SME__list list margin">
+        								<li><span class="icon-ok"></span>You deal with real customer data</li>
+        								<li><span class="icon-ok"></span>Security is of the utmost importance</li>
+        								<li><span class="icon-ok"></span>Availability matters</li>
+        								<li><span class="icon-ok"></span>This is a production service</li>
+        							</ul>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+            	</div>            	
+            </section>
+            <div class="page-devider page-devider--violet">
+            	<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-1">
+							<h4 class="white">Contact us to find out more how we can provide secure, reliable and fast deployment for you.</h4>
+						</div>
+						<div class="col-sm-4">
+							<a href="contact_us.html" class="btn btn-primary">Contact drie</a>
+						</div>
+					</div>
+            	</div>
+            </div>
+            <section class="competiton">
+	            <div class="container">
+	            	<h2 class="block-title block-title--not-alone">Why we are different</h2>
+	        		<p class="block-subtitle">drie is different. We don’t believe in black boxes. We are transparent with all the technologies we use and how drie achieves AWS security best practice.</p>
+	        		<div class="tabs-vertical competiton-tabs">
+	        			<div class="row">
+	        				<div class="col-md-3 col-sm-5">
+	        					<h3 class="competiton__title">drie vs.</h3>
+	        					<ul class="nav nav-tabs">
+								  <li class="active"><a data-toggle="tab" href="#heroku">Heroku</a></li>
+								  <li><a data-toggle="tab" href="#cloudfoundry">Cloudfoundry</a></li>
+								  <li><a data-toggle="tab" href="#beanstalk">Elastic Beanstalk</a></li>
+								</ul>
+	        				</div>
+	        				<div class="col-xs-6 hidden-xs hidden-sm">
+	        					<ul class="nav nav-tabs--bubles">
+								  <li class="buble buble--heroku active"><a data-toggle="tab" href="#heroku"><span class=""></span><h3>Heroku</h3></a></li>
+								  <li class="buble buble--cloudfoundry"><a data-toggle="tab" href="#cloudfoundry"><span ></span><h3>Cloudfoundry</h3></a></li>
+								  <li class="buble buble--beanstalk"><a data-toggle="tab" href="#beanstalk"><span ></span><h3>Elastic Beanstalk</h3></a></li>
+								</ul>
+	        				</div>
+	        				<div class="col-md-3 col-sm-7">
+	        					<div class="tab-content">
+								  <div id="heroku" class="tab-pane fade in active">			  		
+					  				<h3>drie vs. Heroku</h3>
+					  				<p>Heroku is a black box when it comes to use of technologies - we are transparent by making good use of AWS instead.</p>
+								  </div>
+								  <div id="cloudfoundry" class="tab-pane fade">
+						  				<h3>drie vs. Cloudfoundry</h3>
+						  				<p>It takes months to get Cloudfoundry installed and up and running - we'll do that for you in minutes.</p>
+								  </div>
+								  <div id="beanstalk" class="tab-pane fade">
+						  				<h3>drie vs. Elastic Beanstalk</h3>
+						  				<p>Elastic Beanstalk has no security overlay and requires work to implement AWS security best practice which drie gives you out of the box.</p>
+								   </div> 
+								</div>          					
+	        				</div>
+	        			</div>					
+	        		</div>
+	        	</div>
+            </section>
+        </main>
+
+            <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="logo-wrap">
+                            <a class="logo" href="index.html">drie<img src="images/footer_logo.png" alt="drie.co"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="columns">
+                            <div class="column">
+                                <h4 class="column__title">Products</h4>
+                                <ul class="column__list">
+                                    
+                                    <li><a href="https://push.drie.co/">drie push</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">Apps</h4>
+                                <ul class="column__list">
+                                    <li><a href="http://docs.drie.co/">Get Started</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-ruby-app-on-drie-1">Deploy Rails app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-nodejs-express-4-app-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.20.1474651886335&__hsfp=836449569">Deploy Node app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-php-app-on-drie">Deploy PHP app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-java-spark-microframework-app-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.22.1474651886335&__hsfp=836449569">Deploy Java app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-google-go-golang-rest-api-server-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.22.1474651886335&__hsfp=836449569">Deploy Go app</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">About Us</h4>
+                                <ul class="column__list">
+                                    <li> <a href="https://blog.drie.co/"> Blog </a> </li>
+                      				<li> <a href="http://docs.drie.co/docs/drie-platform-overview"> What is drie </a> </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">Support</h4>
+                                <ul class="column__list">
+                                    <li><a href="contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="newletter">
+                            <h4 class="newletter__title">Newletter</h4>
+                            <div class="newletter__form"><input type="text" placeholder="hello@drie.co" disabled><a href="contact_us.html" class="btn btn-primary"><span class="icon-right-open-big"></span></a></div>
+                        </div>
+                       <div class="follow-us">
+                           <h4 class="follow-us__title">Follow Us</h4>
+                           <ul class="social">
+                               <li><a href="https://www.facebook.com/profile.php?id=620050311466158&fref=ts"><span class="icon-facebook"></span></a></li>
+                               <li><a href="https://twitter.com/drie_co"><span class="icon-twitter"></span></a></li>
+                               <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                           </ul>
+                       </div>
+
+                    </div>
+                </div>
+            </div>
+        
+        </footer>
+        <script src="js/libs/owl.carousel.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/isotope.js"></script>
+        <script src="js/libs/magnific-popup.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <!-- <script>$('#video').click(function(){this.paused?this.play():this.pause();});</script> -->
+
+
+        <script>
+            
+        </script>
+        <script>
+            
+        </script>    
+    <!--]-->
+
+
+<div class="cumf_bt_form_wrapper" style="display:none">
+<form id="contact_us_mail_feedback" action="/oldTi9QvqM6ytokU9Q8ylQq" method="post">
+    <fieldset>
+        <!-- Form Name -->
+        <legend>Contact Us</legend>
+        <!-- Text input-->
+        <div class="cumf_bt_form-group">
+            <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_name">name</label>
+            <div class="col-md-4">
+                <input id="cumf_bt_name" name="cumf_bt_name" type="text" placeholder="your name" class="cumf_bt_form-control cumf_bt_input-md" required="1"/>
+                <span class="cumf_bt_help-block">Please enter your name</span>
+            </div>
+        </div>
+        <!-- Text input-->
+        <div class="cumf_bt_form-group">
+            <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_email">your email</label>
+            <div class="col-md-4">
+                <input id="cumf_bt_email" name="cumf_bt_email" type="text" placeholder="enter your email" class="cumf_bt_form-control cumf_bt_input-md" required="1"/>
+                <span class="cumf_bt_help-block">please enter your email</span>
+            </div>
+        </div>
+        <!-- Textarea -->
+        <div class="cumf_bt_form-group">
+            <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_message">your message</label>
+            <div class="col-md-4">
+                <textarea class="cumf_bt_form-control" id="cumf_bt_message" name="cumf_bt_message">Message goes here</textarea>
+            </div>
+        </div>
+        <input type="submit" id="cumf_bt_submit" value="Send"/>
+    </fieldset>
+</form>
+</div>
+
+</body>
+</html>
+<!-- zzz </body><!-->
